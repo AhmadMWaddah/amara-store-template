@@ -38,16 +38,16 @@
 						<a href="index.html" class="navbar__link navbar__link__active">Home</a>
 					</li>
 					<li class="navbar__item">
-						<a href="Pages/Shop.html" class="navbar__link">Shop</a>
+						<a href="Shop.html" class="navbar__link">Shop</a>
 					</li>
 					<li class="navbar__item">
-						<a href="Pages/Accounts.html" class="navbar__link">My Account</a>
+						<a href="Accounts.html" class="navbar__link">My Account</a>
 					</li>
 					<li class="navbar__item">
-						<a href="Pages/Compare.html" class="navbar__link">Compare</a>
+						<a href="Compare.html" class="navbar__link">Compare</a>
 					</li>
 					<li class="navbar__item">
-						<a href="Pages/Sign_Up-Sign_In.html" class="navbar__link">Sign In</a>
+						<a href="Sign_Up-Sign_In.html" class="navbar__link">Sign In</a>
 					</li>
 				</ul>
 
@@ -60,11 +60,11 @@
 			</div>
 
 			<div class="header__icons">
-				<a href="Pages/WishList.html" class="header__icon__btn">
+				<a href="WishList.html" class="header__icon__btn">
 					<img src="Assets/Images/Icon-Heart.svg" />
 					<span class="count">2</span>
 				</a>
-				<a href="Pages/Bags.html" class="header__icon__btn">
+				<a href="Bags.html" class="header__icon__btn">
 					<img src="Assets/Images/Icon-Bag.svg" />
 					<span class="count">6</span>
 				</a>
@@ -136,10 +136,10 @@
 						<h3 class="category__title">Hats</h3>
 					</a>
 				</div>
-				<div class="swiper-button-next swiper__button__next">
+				<div class="swiper-button-next" id="categories-swiper-button-next">
 					<i class="fi fi-br-angle-small-right"></i>
 				</div>
-				<div class="swiper-button-prev swiper__button__prev">
+				<div class="swiper-button-prev" id="categories-swiper-button-prev">
 					<i class="fi fi-br-angle-small-left"></i>
 				</div>
 			</div>
@@ -1128,19 +1128,581 @@
 		<!-- =--------------------------------------= End Products Partition =------------------= -->
 
 		<!-- =--------------------------------------= Start Deals Partition =------------------= -->
-		<section class="deals"></section>
+		<section class="deals partition">
+			<div class="deals__wrapper wrapper display__grid">
+				<div class="deals__item">
+					<div class="deals__group">
+						<h3 class="deals__brand">Deals Of The Week</h3>
+						<span class="deals__category">Limitted Offer.</span>
+					</div>
+					<h4 class="deals__title">Wunter Collection Arrived Yesterday</h4>
+					<div class="deals__price display__flex">
+						<span class="deals__price__new">&dollar;765.32</span>
+						<span class="deals__price__old">&dollar;879.58</span>
+					</div>
+					<div class="deals__group">
+						<p class="count_down_text">Go For It, It Ends In:</p>
+						<div class="count__down">
+							<div class="count__down__amount">
+								<p class="period">5</p>
+								<span class="unit">Days</span>
+							</div>
+							<div class="count__down__amount">
+								<p class="period">15</p>
+								<span class="unit">Hours</span>
+							</div>
+							<div class="count__down__amount">
+								<p class="period">43</p>
+								<span class="unit">Minutes</span>
+							</div>
+							<div class="count__down__amount">
+								<p class="period">23</p>
+								<span class="unit">Seconds</span>
+							</div>
+						</div>
+					</div>
+					<div class="deals__btn">
+						<a href="details.html" class="btn btn__medium">Shop Now</a>
+					</div>
+				</div>
+				<div class="deals__item">
+					<div class="deals__group">
+						<h3 class="deals__brand">Ladies Accessories</h3>
+						<span class="deals__category">Try New Things on Holiday</span>
+					</div>
+					<h4 class="deals__title">Wunter Collection Arrived Yesterday</h4>
+					<div class="deals__price display__flex">
+						<span class="deals__price__new">&dollar;765.32</span>
+						<span class="deals__price__old">&dollar;879.58</span>
+					</div>
+					<div class="deals__group">
+						<p class="count_down_text">Go For It, It Ends In:</p>
+						<div class="count__down">
+							<div class="count__down__amount">
+								<p class="period">5</p>
+								<span class="unit">Days</span>
+							</div>
+							<div class="count__down__amount">
+								<p class="period">15</p>
+								<span class="unit">Hours</span>
+							</div>
+							<div class="count__down__amount">
+								<p class="period">43</p>
+								<span class="unit">Minutes</span>
+							</div>
+							<div class="count__down__amount">
+								<p class="period">23</p>
+								<span class="unit">Seconds</span>
+							</div>
+						</div>
+					</div>
+					<div class="deals__btn">
+						<a href="details.html" class="btn btn__medium">Shop Now</a>
+					</div>
+				</div>
+			</div>			
+		</section>
 		<!-- =--------------------------------------= End Deals Partition =------------------= -->
 
 		<!-- =--------------------------------------= Start New Arrivals Partition =------------------= -->
-		<section class="new__arrivals"></section>
+		<section class="new__arrivals partition wrapper">
+			<h3 class="partition__title">
+				<span>New</span> Arrivals
+			</h3>			
+			<div class="new__arrivals__wrapper swiper" id="new-arrivals-wrapper">
+				<div class="swiper-wrapper swiper__wrapper">
+					<div class="new__arrival__item swiper-slide">
+						<div class="new__arrival__banner">
+							<a href="details.html" class="new__arrival__images">
+								<img src="Assets/Images/Product-01-01.jpg" class="new__arrival__image new__arrival__image__default" />
+								<img src="Assets/Images/Product-01-02.jpg" class="new__arrival__image new__arrival__image__hover" />
+							</a>
+							<div class="new__arrival__actions">
+								<a href="#" aria-label="Quick View">
+									<i class="fi fi-br-eye"></i>
+								</a>
+								<a href="#" aria-label="Add To WishList">
+									<i class="fi fi-br-heart"></i>
+								</a>
+								<a href="#" aria-label="Compare">
+									<i class="fi fi-br-shuffle"></i>
+								</a>
+							</div>
+							<div class="new__arrival__badge new__arrival__badge__light__pink">Sale</div>
+						</div>
+						<div class="new__arrival__content">
+							<span class="new__arrival__category">Clothing</span>
+							<a href="details.html">
+								<h3 class="new__arrival__name">Lorem ipsum dolor sit</h3>
+							</a>
+							<div class="new__arrival__stars">
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+							</div>
+							<div class="new__arrival__price display__flex">
+								<span class="new__price">&dollar;465.55</span>
+								<span class="old__price">&dollar;680.20</span>
+							</div>
+							<a href="#" class="bag__button" aria-label="Add To Bag">
+								<i class="fi fi-br-shopping-bag-add"></i>
+							</a>
+						</div>
+					</div>
+					<div class="new__arrival__item swiper-slide">
+						<div class="new__arrival__banner">
+							<a href="details.html" class="new__arrival__images">
+								<img src="Assets/Images/Product-02-01.jpg" class="new__arrival__image new__arrival__image__default" />
+								<img src="Assets/Images/Product-02-02.jpg" class="new__arrival__image new__arrival__image__hover" />
+							</a>
+							<div class="new__arrival__actions">
+								<a href="#" aria-label="Quick View">
+									<i class="fi fi-br-eye"></i>
+								</a>
+								<a href="#" aria-label="Add To WishList">
+									<i class="fi fi-br-heart"></i>
+								</a>
+								<a href="#" aria-label="Compare">
+									<i class="fi fi-br-shuffle"></i>
+								</a>
+							</div>
+							<div class="new__arrival__badge new__arrival__badge__light__green">Sale</div>
+						</div>
+						<div class="new__arrival__content">
+							<span class="new__arrival__category">Clothing</span>
+							<a href="details.html">
+								<h3 class="new__arrival__name">Lorem ipsum dolor sit</h3>
+							</a>
+							<div class="new__arrival__stars">
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+							</div>
+							<div class="new__arrival__price display__flex">
+								<span class="new__price">&dollar;465.55</span>
+								<span class="old__price">&dollar;680.20</span>
+							</div>
+							<a href="#" class="bag__button" aria-label="Add To Bag">
+								<i class="fi fi-br-shopping-bag-add"></i>
+							</a>
+						</div>
+					</div>
+					<div class="new__arrival__item swiper-slide">
+						<div class="new__arrival__banner">
+							<a href="details.html" class="new__arrival__images">
+								<img src="Assets/Images/Product-03-01.jpg" class="new__arrival__image new__arrival__image__default" />
+								<img src="Assets/Images/Product-03-02.jpg" class="new__arrival__image new__arrival__image__hover" />
+							</a>
+							<div class="new__arrival__actions">
+								<a href="#" aria-label="Quick View">
+									<i class="fi fi-br-eye"></i>
+								</a>
+								<a href="#" aria-label="Add To WishList">
+									<i class="fi fi-br-heart"></i>
+								</a>
+								<a href="#" aria-label="Compare">
+									<i class="fi fi-br-shuffle"></i>
+								</a>
+							</div>
+							<div class="new__arrival__badge new__arrival__badge__light__orange">Sale</div>
+						</div>
+						<div class="new__arrival__content">
+							<span class="new__arrival__category">Clothing</span>
+							<a href="details.html">
+								<h3 class="new__arrival__name">Lorem ipsum dolor sit</h3>
+							</a>
+							<div class="new__arrival__stars">
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+							</div>
+							<div class="new__arrival__price display__flex">
+								<span class="new__price">&dollar;465.55</span>
+								<span class="old__price">&dollar;680.20</span>
+							</div>
+							<a href="#" class="bag__button" aria-label="Add To Bag">
+								<i class="fi fi-br-shopping-bag-add"></i>
+							</a>
+						</div>
+					</div>
+					<div class="new__arrival__item swiper-slide">
+						<div class="new__arrival__banner">
+							<a href="details.html" class="new__arrival__images">
+								<img src="Assets/Images/Product-04-01.jpg" class="new__arrival__image new__arrival__image__default" />
+								<img src="Assets/Images/Product-04-02.jpg" class="new__arrival__image new__arrival__image__hover" />
+							</a>
+							<div class="new__arrival__actions">
+								<a href="#" aria-label="Quick View">
+									<i class="fi fi-br-eye"></i>
+								</a>
+								<a href="#" aria-label="Add To WishList">
+									<i class="fi fi-br-heart"></i>
+								</a>
+								<a href="#" aria-label="Compare">
+									<i class="fi fi-br-shuffle"></i>
+								</a>
+							</div>
+							<div class="new__arrival__badge new__arrival__badge__light__blue">Sale</div>
+						</div>
+						<div class="new__arrival__content">
+							<span class="new__arrival__category">Clothing</span>
+							<a href="details.html">
+								<h3 class="new__arrival__name">Lorem ipsum dolor sit</h3>
+							</a>
+							<div class="new__arrival__stars">
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+							</div>
+							<div class="new__arrival__price display__flex">
+								<span class="new__price">&dollar;465.55</span>
+								<span class="old__price">&dollar;680.20</span>
+							</div>
+							<a href="#" class="bag__button" aria-label="Add To Bag">
+								<i class="fi fi-br-shopping-bag-add"></i>
+							</a>
+						</div>
+					</div>
+					<div class="new__arrival__item swiper-slide">
+						<div class="new__arrival__banner">
+							<a href="details.html" class="new__arrival__images">
+								<img src="Assets/Images/Product-05-01.jpg" class="new__arrival__image new__arrival__image__default" />
+								<img src="Assets/Images/Product-05-02.jpg" class="new__arrival__image new__arrival__image__hover" />
+							</a>
+							<div class="new__arrival__actions">
+								<a href="#" aria-label="Quick View">
+									<i class="fi fi-br-eye"></i>
+								</a>
+								<a href="#" aria-label="Add To WishList">
+									<i class="fi fi-br-heart"></i>
+								</a>
+								<a href="#" aria-label="Compare">
+									<i class="fi fi-br-shuffle"></i>
+								</a>
+							</div>
+							<div class="new__arrival__badge new__arrival__badge__light__pink">-40&#37;</div>
+						</div>
+						<div class="new__arrival__content">
+							<span class="new__arrival__category">Clothing</span>
+							<a href="details.html">
+								<h3 class="new__arrival__name">Lorem ipsum dolor sit</h3>
+							</a>
+							<div class="new__arrival__stars">
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+							</div>
+							<div class="new__arrival__price display__flex">
+								<span class="new__price">&dollar;465.55</span>
+								<span class="old__price">&dollar;680.20</span>
+							</div>
+							<a href="#" class="bag__button" aria-label="Add To Bag">
+								<i class="fi fi-br-shopping-bag-add"></i>
+							</a>
+						</div>
+					</div>
+					<div class="new__arrival__item swiper-slide">
+						<div class="new__arrival__banner">
+							<a href="details.html" class="new__arrival__images">
+								<img src="Assets/Images/Product-06-01.jpg" class="new__arrival__image new__arrival__image__default" />
+								<img src="Assets/Images/Product-06-02.jpg" class="new__arrival__image new__arrival__image__hover" />
+							</a>
+							<div class="new__arrival__actions">
+								<a href="#" aria-label="Quick View">
+									<i class="fi fi-br-eye"></i>
+								</a>
+								<a href="#" aria-label="Add To WishList">
+									<i class="fi fi-br-heart"></i>
+								</a>
+								<a href="#" aria-label="Compare">
+									<i class="fi fi-br-shuffle"></i>
+								</a>
+							</div>
+							<div class="new__arrival__badge new__arrival__badge__light__pink">-22&#37;</div>
+						</div>
+						<div class="new__arrival__content">
+							<span class="new__arrival__category">Clothing</span>
+							<a href="details.html">
+								<h3 class="new__arrival__name">Lorem ipsum dolor sit</h3>
+							</a>
+							<div class="new__arrival__stars">
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+							</div>
+							<div class="new__arrival__price display__flex">
+								<span class="new__price">&dollar;465.55</span>
+								<span class="old__price">&dollar;680.20</span>
+							</div>
+							<a href="#" class="bag__button" aria-label="Add To Bag">
+								<i class="fi fi-br-shopping-bag-add"></i>
+							</a>
+						</div>
+					</div>
+					<div class="new__arrival__item swiper-slide">
+						<div class="new__arrival__banner">
+							<a href="details.html" class="new__arrival__images">
+								<img src="Assets/Images/Product-07-01.jpg" class="new__arrival__image new__arrival__image__default" />
+								<img src="Assets/Images/Product-07-02.jpg" class="new__arrival__image new__arrival__image__hover" />
+							</a>
+							<div class="new__arrival__actions">
+								<a href="#" aria-label="Quick View">
+									<i class="fi fi-br-eye"></i>
+								</a>
+								<a href="#" aria-label="Add To WishList">
+									<i class="fi fi-br-heart"></i>
+								</a>
+								<a href="#" aria-label="Compare">
+									<i class="fi fi-br-shuffle"></i>
+								</a>
+							</div>
+							<div class="new__arrival__badge new__arrival__badge__light__green">Sale</div>
+						</div>
+						<div class="new__arrival__content">
+							<span class="new__arrival__category">Clothing</span>
+							<a href="details.html">
+								<h3 class="new__arrival__name">Lorem ipsum dolor sit</h3>
+							</a>
+							<div class="new__arrival__stars">
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+								<i class="fi fi-br-star"></i>
+							</div>
+							<div class="new__arrival__price display__flex">
+								<span class="new__price">&dollar;465.55</span>
+								<span class="old__price">&dollar;680.20</span>
+							</div>
+							<a href="#" class="bag__button" aria-label="Add To Bag">
+								<i class="fi fi-br-shopping-bag-add"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next" id="new-arrivals-swiper-button-next">
+					<i class="fi fi-br-angle-small-right"></i>
+				</div>
+				<div class="swiper-button-prev" id="new-arrivals-swiper-button-prev">
+					<i class="fi fi-br-angle-small-left"></i>
+				</div>
+			</div>
+		</section>
 		<!-- =--------------------------------------= End New Arrivals Partition =------------------= -->
 
 		<!-- =--------------------------------------= Start ShoeCases Partition =------------------= -->
-		<section class="showcase"></section>
+		<section class="showcase partition">
+			<div class="showcase__wrapper wrapper display__grid">
+				<div class="showcase__column">
+					<h3 class="partition__title">Hot Releases</h3>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-01.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-02.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-03.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="showcase__column">
+					<h3 class="partition__title">Deals & Outlet</h3>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-04.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-05.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-06.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="showcase__column">
+					<h3 class="partition__title">Top Selling</h3>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-07.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-08.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-09.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="showcase__column">
+					<h3 class="partition__title">Trendy</h3>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-03.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-08.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+					<div class="showcase__item">
+						<a href="Pages/Details.html" class="showcase__image__box">
+							<img src="Assets/Images/ShowCase-05.jpg" class="showcase__image" />
+						</a>
+						<div class="showcase__content">
+							<a href="Pages/Details.html">
+								<h4 class="showcase__title">Lorem ipsum dolor sit amet consectetur</h4>
+							</a>
+							<div class="showcase__price display__flex">
+								<span class="new__price">&dollar;4356.52</span>
+								<span class="old__price">&dollar;5632.45</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- =--------------------------------------= End ShoeCases Partition =------------------= -->
 
 		<!-- =--------------------------------------= Start NewsLetter Partition =------------------= -->
-		<section class="newsletter"></section>
+		<section class="newsletter partition newsletter__home">
+			<div class="newsletter__wrapper wrapper display__grid">
+				<h3 class="newsletter__title display__flex">
+					<img src="Assets/Images/Icon-EMail.svg" class="newsletter__icon" />
+					Sign Up To Our NewsLetter
+				</h3>
+				<p class="newsletter__description">Lorem ipsum, dolor sit amet consectetur.</p>
+				<form action="" class="newsletter__form">
+					<input type="text" class="newsletter__input" placeholder="Enter Your EMail..." />
+					<button type="submit" class="newsletter__btn">Subscribe</button>
+				</form>
+			</div>
+		</section>
 		<!-- =--------------------------------------= End NewsLetter Partition =------------------= -->
 
 	</main>
@@ -1148,7 +1710,102 @@
 
 	
 	<!-- =--------------------------------------= Start Footer Partition =------------------= -->
-	<footer class="footer"></footer>
+	<footer class="footer wrapper">
+		<div class="footer__wrapper display__grid">
+			<div class="footer__content">
+				<a href="index.html" class="footer__logo">
+					<img src="Assets/Images/Logo.svg" class="footer__image" />
+				</a>
+				<h4 class="footer__sub__title">Contact</h4>
+				<p class="footer__description">
+					<span>Address:</span>
+					 Lorem ipsum dolor, sit amet consectetur adipisicing.
+				</p>
+				<p class="footer__description">
+					<span>Phone:</span>
+					 +20 114 159 169 5.
+				</p>
+				<p class="footer__description">
+					<span>Hours:</span>
+					 02:00 - 14:30, Sat - Thu
+				</p>
+				<div class="footer__social">
+					<h4 class="footer__sub__title">Follow Me</h4>
+					<div class="footer__social__links">
+						<a href="#">
+							<img src="Assets/Images/Icon-Facebook.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Twitter.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Instagram.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Pinterest.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-YouTube.svg" class="footer__social__icon" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__content">
+				<h4 class="footer__title">Address</h4>
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer__link">About Us</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Delivery Inforamtion</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Terms & Conditions</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Contact Us</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Support Center</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				<h4 class="footer__title">My Account</h4>
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer__link">Sign In</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">View Shopping Bag</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">My WhishList</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Track My Order</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Help</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">My Orders</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				<h3 class="footer__title">Payment GateWays</h3>
+				<img src="Assets/Images/Payments-Cards.png" class="payment__image" />
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<p class="copyright">&copy; 2024 AMW All Rights Reserved</p>
+			<span class="creator">Created By Ahmad Muhammad Waddah</span>
+		</div>
+	</footer>
 	<!-- =--------------------------------------= End Footer Partition =------------------= -->
 
 

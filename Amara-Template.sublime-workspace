@@ -1,0 +1,943 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dis",
+				"display__flex"
+			],
+			[
+				"pa",
+				"Paments-Cards.png"
+			],
+			[
+				"I",
+				"Images/"
+			],
+			[
+				"fas",
+				"Icon-Facebook.svg"
+			],
+			[
+				"ico",
+				"Icon-EMail.svg"
+			],
+			[
+				"showcase",
+				"ShowCase-01.jpg"
+			],
+			[
+				"Pa",
+				"Pages/"
+			],
+			[
+				"Dea",
+				"Deals-02.png"
+			],
+			[
+				"deals",
+				"Deals-01.jpg"
+			],
+			[
+				"prod",
+				"Product-01-01.jpg"
+			],
+			[
+				"category",
+				"Category-01.jpg"
+			],
+			[
+				"ty",
+				"style"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"sc",
+				"scale3d()"
+			],
+			[
+				"Sho",
+				"Shop.html"
+			],
+			[
+				"brd",
+				"border-radius"
+			],
+			[
+				"tra",
+				"translateX()"
+			],
+			[
+				"Ba",
+				"Icon-Bag.svg"
+			],
+			[
+				"hea",
+				"Icon-Heart.svg"
+			],
+			[
+				"As",
+				"Assets/"
+			],
+			[
+				"sea",
+				"Icon-Search.png"
+			],
+			[
+				"S",
+				"Sign_Up-Sign_In.html"
+			],
+			[
+				"Sh",
+				"Shop.html"
+			],
+			[
+				"sma",
+				"smaller"
+			],
+			[
+				"displaP",
+				"displayProduct"
+			],
+			[
+				"m",
+				"max-width"
+			],
+			[
+				"Imag",
+				"Images/"
+			],
+			[
+				"Ima",
+				"Images/"
+			],
+			[
+				"tr",
+				"translateY()"
+			],
+			[
+				"Scr",
+				"Scripts.js"
+			],
+			[
+				"rg",
+				"rgba"
+			],
+			[
+				"lo",
+				"logo.png"
+			],
+			[
+				"rgb",
+				"rgb()"
+			],
+			[
+				"blo",
+				"blog-1"
+			],
+			[
+				"pay",
+				"payment.png"
+			],
+			[
+				"ac",
+				"action__button"
+			],
+			[
+				"fa-shopp",
+				"fa-shopping-bag"
+			],
+			[
+				"--tran",
+				"--transform-scale-translate"
+			],
+			[
+				"--tra",
+				"--transform-scale-translate"
+			],
+			[
+				"Sty",
+				"Styles_Responsive.css"
+			],
+			[
+				"fade",
+				"fade-down"
+			],
+			[
+				"--tr",
+				"--trnstn"
+			],
+			[
+				"--trn",
+				"--trnstn"
+			],
+			[
+				"--",
+				"--trnstn"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"tras",
+				"transition"
+			],
+			[
+				"af",
+				"auto-fit"
+			],
+			[
+				"n",
+				"Normalize.css"
+			],
+			[
+				"trns",
+				"transition"
+			],
+			[
+				"Styles",
+				"Styles_Mobile.css"
+			],
+			[
+				"dark",
+				"darkgoldenrod"
+			],
+			[
+				"pur",
+				"paleturquoise"
+			],
+			[
+				"ma",
+				"main-clr"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"menu",
+				"menuLinksUl"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"Image",
+				"Images/"
+			],
+			[
+				"get",
+				"getItem"
+			],
+			[
+				"qs",
+				"querySelectorAll"
+			],
+			[
+				"fe",
+				"forEach"
+			],
+			[
+				"ri",
+				"removeItem"
+			],
+			[
+				"bu",
+				"bullets__option"
+			],
+			[
+				"tran",
+				"translateY()"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"Fea",
+				"Feat01.png"
+			],
+			[
+				"qu",
+				"querySelector"
+			],
+			[
+				"parenN",
+				"parentNode"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"createN",
+				"createTextNode"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"gal",
+				"galleryImgOverlay"
+			],
+			[
+				"creat",
+				"createElement"
+			],
+			[
+				"windo",
+				"windowHeight"
+			],
+			[
+				"skills",
+				"ourSkillsOuterHeight"
+			],
+			[
+				"skil",
+				"ourSkillsOffsetTop"
+			],
+			[
+				"wind",
+				"windowScrollTop"
+			],
+			[
+				"ours",
+				"ourSkillsOuterHeight"
+			],
+			[
+				"consol",
+				"console_log"
+			],
+			[
+				"im",
+				"Images/"
+			],
+			[
+				"local",
+				"localStorageBackgroundItem"
+			],
+			[
+				"backgrou",
+				"backgroundOption"
+			],
+			[
+				"qus",
+				"querySelectorAll"
+			],
+			[
+				"pare",
+				"parentElement"
+			],
+			[
+				"colo",
+				"console_log"
+			],
+			[
+				"getIte",
+				"getItem"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"fore",
+				"forEach"
+			],
+			[
+				"foe",
+				"forEach"
+			],
+			[
+				"cons",
+				"console_log"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"getEle",
+				"getElementsByClassName"
+			],
+			[
+				"ad",
+				"addEventListener"
+			],
+			[
+				"ocCl",
+				"onclick"
+			],
+			[
+				"ran",
+				"randomNumber"
+			],
+			[
+				"ima",
+				"imagesArray"
+			],
+			[
+				"rand",
+				"randomNumber"
+			],
+			[
+				"baci",
+				"backgroundImage"
+			],
+			[
+				"styl",
+				"style"
+			],
+			[
+				"dqs",
+				"description-querySelector"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"STA",
+				"STATICFILES_DIRS"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"Tas",
+				"Task"
+			],
+			[
+				"mode",
+				"Model\tModel"
+			],
+			[
+				"clas",
+				"class\tNew Class"
+			],
+			[
+				"no",
+				"auto_now"
+			],
+			[
+				"mdt",
+				"mdatetime\tDateTimeField (mdatetime)"
+			],
+			[
+				"au",
+				"auto_now_add"
+			],
+			[
+				"db",
+				"db_index"
+			],
+			[
+				"Mod",
+				"Model\tModel"
+			],
+			[
+				"Mo",
+				"Model\tModel"
+			],
+			[
+				"sett",
+				"settings"
+			],
+			[
+				"product",
+				"production"
+			],
+			[
+				"pat",
+				"Path"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"reindes",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Gitignore: New gitignore"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"grun",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"gr",
+				"Grunt"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"gru",
+				"Grunt"
+			],
+			[
+				"gulp",
+				"Gulp: Show panel"
+			],
+			[
+				"build",
+				"Build With: SassToCss"
+			],
+			[
+				"gulp wa",
+				"Gulp: Show panel"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"JsPrettier Format Code",
+				"JsPrettier: Format Code"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"j",
+				"JsPrettier: Format Code"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"schem",
+				"UI: Select Color Scheme"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"shce",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"sheme",
+				"UI: Select Theme"
+			],
+			[
+				"shceme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"gitig",
+				"Gitignore: New gitignore"
+			],
+			[
+				"gitignore",
+				"Gitignore: New gitignore"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sch",
+				"UI: Select Color Scheme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 360.0,
+		"history":
+		[
+			"cls",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Shop.html",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/Styles.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/_utilities/_classes_extends.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/Pages/Shop.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/_utilities/_variables.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template BackUp/Assets/Styles/Sass/Styles.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/.gitignore",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/_utilities/_fonts.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/_utilities/_globals_resets.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/_utilities/_extends.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/_utilities/_base.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Amara-Template.sublime-project",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Assets/Styles/Sass/_utilities/_functions.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Styles/Css/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Styles/Sass/Styles.sass",
+		"/home/amw/WorkSpaces/JavaScript/amara-store-template/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/Jewellery-Template/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/Jewellery-Template/Styles/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/Jewellery-Template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Classes.md",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Styles/Sass/Styles.sass",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Data/Products.json",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Scripts/Product.js",
+		"/home/amw/Public/gruvbox-master/README.md",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Styles/Css/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Data/products.json",
+		"/home/amw/WorkSpaces/JavaScript/Fashion-eCommerce-Template/Styles/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/ecommerce-multipage-template/Styles/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/ecommerce-multipage-template/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/ecommerce-multipage-template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/ecommerce-multipage-template/indexs.html",
+		"/home/amw/WorkSpaces/JavaScript/eCommerce-Template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Styles/Sass/Styles.sass",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Styles/Css/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Gruntfile.js",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/.gitignore",
+		"/home/amw/.config/sublime-text/Packages/Grunt/Grunt.sublime-settings",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Grunfile.js",
+		"/home/amw/.config/sublime-text/Packages/Gulp/README.md",
+		"/home/amw/.config/sublime-text/Packages/Gulp/Gulp.sublime-settings",
+		"/home/amw/.config/sublime-text/Packages/User/Gulp.sublime-settings",
+		"/home/amw/.config/sublime-text/Packages/User/SassToCss.sublime-build",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/package.json",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/gulpfile.js",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Scripts/Testimonial.js",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Scripts/Products.js",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Data/Products.json",
+		"/home/amw/WorkSpaces/JavaScript/Food-Ordering-Template/Data/Testimonials.json",
+		"/home/amw/WorkSpaces/JavaScript/ZeroPractice/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Jewellery-Template/README.md",
+		"/home/amw/WorkSpaces/JavaScript/Jewellery-Template/Styles/Styles_Desktop.css",
+		"/home/amw/WorkSpaces/JavaScript/Jewellery-Template/Styles/Styles_Responsive.css",
+		"/home/amw/WorkSpaces/JavaScript/Jewellery-Template/Styles/Styles__Desktop.css",
+		"/home/amw/WorkSpaces/JavaScript/Jewllery-Template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Jewllery-Template/Styles/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/Jewllery-Template/Styles/Styles_Responsive.css",
+		"/home/amw/WorkSpaces/JavaScript/Jewllery-Template/README.md",
+		"/home/amw/WorkSpaces/JavaScript/Jewllery-Template/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/ZeroPractice/Styles/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/ZeroPractice/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/Jewllery-Template/IndexExample.html",
+		"/home/amw/WorkSpaces/JavaScript/Metro-Template/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Metro-Template/Styles/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/Metro-Template/IndexExample.html",
+		"/home/amw/WorkSpaces/JavaScript/Metro-Template/Styles/Styles_Responsive.css",
+		"/home/amw/WorkSpaces/JavaScript/Metro-Template/Styles/mquery.css",
+		"/home/amw/WorkSpaces/JavaScript/Metro-Template/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/Metro-Template/Scripts/script.js",
+		"/home/amw/Downloads/AMW-Portfolio-master/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Ecom/index.html",
+		"/home/amw/WorkSpaces/JavaScript/Ecom/Styles/Styles.css",
+		"/home/amw/WorkSpaces/JavaScript/Ecom/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/ZeroPrjct/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/JavaScript/Ecom/Styles/Styles_Mobile.css",
+		"/home/amw/WorkSpaces/JavaScript/Ecom/Styles/Styles_Tablet.css",
+		"/home/amw/WorkSpaces/JavaScript/Ecom/Styles/Styles_Desktop.css",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroHangMan/Styles/Styles.css",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroHangMan/index.html",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroPrjct/index.html",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroPrjct/Scripts/Scripts.js",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroPrjct/Styles/Styles.css",
+		"/home/amw/.UpDtUpGrd.sh",
+		"/home/amw/AMW/Scripts/UpDtUpGrd.sh",
+		"/home/amw/AMW/Customizations/Themes/Sublime Text/GruvBox Theme Docs",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroPrjct/FontAwesome-5.15.4/js/all.js",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroPrjct/FontAwesome-5.15.4/js/fontawesome.js",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroPrjct/FontAwesome-5.15.4/js/all.min.js",
+		"/home/amw/WorkSpaces/FrontEnd/ZeroPrjct/Styles/Normalize.css",
+		"/home/amw/WorkSpaces/Django/amw-st/core/settings.py",
+		"/home/amw/WorkSpaces/Django/ToDos/templates/base.html",
+		"/home/amw/WorkSpaces/Django/ToDos/templates/pages/404.html",
+		"/home/amw/WorkSpaces/Django/ToDos/static/styles/styles.css",
+		"/home/amw/Public/index.html",
+		"/home/amw/WorkSpaces/Django/ToDos/templates/tasks/index.html",
+		"/home/amw/WorkSpaces/Django/ToDos/project/settings.py",
+		"/home/amw/WorkSpaces/Django/ToDos/tasks/tasks.py",
+		"/home/amw/WorkSpaces/Django/ToDos/tasks/urls.py",
+		"/home/amw/WorkSpaces/Django/ToDos/venv_todos/lib/python3.10/site-packages/django/views/generic/list.py",
+		"/home/amw/WorkSpaces/Django/ToDos/tasks/models.py",
+		"/home/amw/WorkSpaces/Django/ToDos/project/urls.py",
+		"/home/amw/WorkSpaces/Django/ToDos/accounts/models.py",
+		"/home/amw/WorkSpaces/Django/ToDos/.gitignore",
+		"/home/amw/WorkSpaces/Django/ToDos/accounts/accounts.py",
+		"/home/amw/WorkSpaces/Django/ToDos/accounts/urls.py",
+		"/home/amw/WorkSpaces/Django/ToDos/venv_todos/lib/python3.10/site-packages/django/core/files/storage/filesystem.py",
+		"/home/amw/WorkSpaces/Django/drfecom/index.html",
+		"/home/amw/WorkSpaces/Django/drfecom/.gitignore",
+		"/home/amw/WorkSpaces/Django/drfecom/project/tests/test_example.py",
+		"/home/amw/WorkSpaces/Django/drfecom/pytest.ini",
+		"/home/amw/WorkSpaces/Django/drfecom/project/settings/base.py",
+		"/home/amw/WorkSpaces/Django/drfecom/project/settings/development.py",
+		"/home/amw/WorkSpaces/Django/drfecom/.env",
+		"/home/amw/WorkSpaces/Django/drfecom/requirements.txt",
+		"/home/amw/WorkSpaces/Django/drfecom/manage.py",
+		"/home/amw/WorkSpaces/Django/drfecom/project/settings/production.py",
+		"/home/amw/WorkSpaces/Django/drfecom/project/settings.py",
+		"/home/amw/WorkSpaces/Django/SaaS-Journal/README.md",
+		"/home/amw/WorkSpaces/Django/SaaS-Journal/.flake8",
+		"/home/amw/WorkSpaces/Django/SaaS-Journal/.isort.cfg",
+		"/home/amw/WorkSpaces/Django/SaaS-Journal/ZPrjctSrv.sh",
+		"/home/amw/Suru Plus/README.en.md",
+		"/home/amw/Public/Gruvbox GTK Theme/README.md"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"show__case",
+			"nowrap",
+			"new__arrival__item",
+			"swiper__wrapper",
+			"button__medium",
+			"medium__button",
+			"count__down__unit",
+			"count__down__period",
+			"<span class=\"old__price\">&dollar;879.58</span>",
+			"<span class=\"new__price\">&dollar;765.32</span>",
+			"btn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"showcase",
+			"new__arrival__item swiper-slide",
+			"btn__medium",
+			"button__medium",
+			"unit",
+			"period",
+			"<span class=\"deals__price__old\">&dollar;879.58</span>",
+			"<span class=\"deals__price__new\">&dollar;765.32</span>",
+			""
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 203.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 104.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 96.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Amara-Template.sublime-project",
+	"replace":
+	{
+		"height": 88.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -76,38 +76,8 @@ textarea, input, button {
     .partition__title span {
       color: #088179; }
 
-.btn {
-  font-family: "Spartan", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 700;
-  display: inline-block;
-  color: white;
-  border: 0.2rem solid #088179;
-  background: #088179;
-  padding-inline: 1.75rem;
-  height: 49px;
-  line-height: 49px;
-  border-radius: 0.25rem;
-  transition: all 0.4s linear; }
-  .btn:hover {
-    background: transparent;
-    color: #088179;
-    transform: scale(1.05);
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem #088179; }
-
-.swiper__buttons, .categories .categories__wrapper .swiper__button__next, .categories .categories__wrapper .swiper__button__prev {
-  top: -1.875rem;
-  background: #e9f6eb;
-  border: 0.1rem solid #cbe7cf;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  color: #088179;
-  font-size: 0.6875rem; }
-  .swiper__buttons:after, .categories .categories__wrapper .swiper__button__next:after, .categories .categories__wrapper .swiper__button__prev:after {
-    content: ""; }
-
-.action__button, .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__actions a, .products .tab__items .tab__item .products__wrapper .product__item .product__content .bag__button {
+/* =--------------------------------------= Components Classes =------------------= */
+.action__button, .products__wrapper .product__item .product__banner .product__actions a, .products .tab__items .tab__item .product__item .product__banner .product__actions a, .products__wrapper .product__item .product__content .bag__button, .products .tab__items .tab__item .product__item .product__content .bag__button, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button {
   width: 40px;
   height: 40px;
   background: #e9f6eb;
@@ -118,18 +88,18 @@ textarea, input, button {
   text-align: center;
   border-radius: 50%;
   position: relative;
-  transition: all 0.4s linear; }
-  .action__button:hover, .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__actions a:hover, .products .tab__items .tab__item .products__wrapper .product__item .product__content .bag__button:hover {
+  transition: all 0.38s linear; }
+  .action__button:hover, .products__wrapper .product__item .product__banner .product__actions a:hover, .products .tab__items .tab__item .product__item .product__banner .product__actions a:hover, .products__wrapper .product__item .product__content .bag__button:hover, .products .tab__items .tab__item .product__item .product__content .bag__button:hover, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a:hover, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button:hover {
     background: #088179;
     color: white;
     border: 0.15rem solid #088179; }
-    .action__button:hover::before, .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__actions a:hover::before, .products .tab__items .tab__item .products__wrapper .product__item .product__content .bag__button:hover::before {
+    .action__button:hover::before, .products__wrapper .product__item .product__banner .product__actions a:hover::before, .products .tab__items .tab__item .product__item .product__banner .product__actions a:hover::before, .products__wrapper .product__item .product__content .bag__button:hover::before, .products .tab__items .tab__item .product__item .product__content .bag__button:hover::before, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a:hover::before, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button:hover::before {
       opacity: 1;
       transform: translateX(-50%) translateY(-0.5rem); }
-    .action__button:hover::after, .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__actions a:hover::after, .products .tab__items .tab__item .products__wrapper .product__item .product__content .bag__button:hover::after {
+    .action__button:hover::after, .products__wrapper .product__item .product__banner .product__actions a:hover::after, .products .tab__items .tab__item .product__item .product__banner .product__actions a:hover::after, .products__wrapper .product__item .product__content .bag__button:hover::after, .products .tab__items .tab__item .product__item .product__content .bag__button:hover::after, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a:hover::after, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button:hover::after {
       opacity: 1;
       transform: translateX(-50%) translateY(-0.5rem); }
-  .action__button::before, .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__actions a::before, .products .tab__items .tab__item .products__wrapper .product__item .product__content .bag__button::before {
+  .action__button::before, .products__wrapper .product__item .product__banner .product__actions a::before, .products .tab__items .tab__item .product__item .product__banner .product__actions a::before, .products__wrapper .product__item .product__content .bag__button::before, .products .tab__items .tab__item .product__item .product__content .bag__button::before, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a::before, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button::before {
     content: "";
     top: -2px;
     border: 0.5rem solid transparent;
@@ -137,9 +107,9 @@ textarea, input, button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.4s linear;
+    transition: all 0.38s linear;
     opacity: 0; }
-  .action__button::after, .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__actions a::after, .products .tab__items .tab__item .products__wrapper .product__item .product__content .bag__button::after {
+  .action__button::after, .products__wrapper .product__item .product__banner .product__actions a::after, .products .tab__items .tab__item .product__item .product__banner .product__actions a::after, .products__wrapper .product__item .product__content .bag__button::after, .products .tab__items .tab__item .product__item .product__content .bag__button::after, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a::after, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button::after {
     content: attr(aria-label);
     bottom: 100%;
     position: absolute;
@@ -152,10 +122,137 @@ textarea, input, button {
     padding-inline: 0.625rem;
     border-radius: 0.25rem;
     line-height: 2.58;
-    transition: all 0.4s linear;
+    transition: all 0.38s linear;
     opacity: 0; }
 
+.products__wrapper, .products .tab__items .tab__item {
+  grid-template-columns: repeat(4, 1fr); }
+  .products__wrapper .product__item, .products .tab__items .tab__item .product__item {
+    border: 0.15rem solid #cbe7cf;
+    border-radius: 1.5rem;
+    transition: all 0.38s linear; }
+    .products__wrapper .product__item:hover, .products .tab__items .tab__item .product__item:hover {
+      box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2); }
+      .products__wrapper .product__item:hover .product__banner .product__actions, .products .tab__items .tab__item .product__item:hover .product__banner .product__actions {
+        opacity: 1; }
+      .products__wrapper .product__item:hover .product__banner .product__images .product__image, .products .tab__items .tab__item .product__item:hover .product__banner .product__images .product__image {
+        transform: scale(1.1); }
+        .products__wrapper .product__item:hover .product__banner .product__images .product__image__default, .products .tab__items .tab__item .product__item:hover .product__banner .product__images .product__image__default {
+          opacity: 0; }
+        .products__wrapper .product__item:hover .product__banner .product__images .product__image__hover, .products .tab__items .tab__item .product__item:hover .product__banner .product__images .product__image__hover {
+          opacity: 1; }
+    .products__wrapper .product__item .product__banner, .products .tab__items .tab__item .product__item .product__banner {
+      padding: 0.625rem 0.75rem 0.75rem;
+      position: relative; }
+      .products__wrapper .product__item .product__banner .product__images, .products .tab__items .tab__item .product__item .product__banner .product__images {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        border-radius: 1.25rem; }
+        .products__wrapper .product__item .product__banner .product__images .product__image, .products .tab__items .tab__item .product__item .product__banner .product__images .product__image {
+          vertical-align: middle;
+          transition: all 0.38s linear; }
+          .products__wrapper .product__item .product__banner .product__images .product__image__hover, .products .tab__items .tab__item .product__item .product__banner .product__images .product__image__hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0; }
+      .products__wrapper .product__item .product__banner .product__actions, .products .tab__items .tab__item .product__item .product__banner .product__actions {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        column-gap: 0.5rem;
+        opacity: 0;
+        transition: all 0.38s linear; }
+      .products__wrapper .product__item .product__banner .product__badge, .products .tab__items .tab__item .product__item .product__banner .product__badge {
+        position: absolute;
+        left: 1.25rem;
+        top: 1.25rem;
+        background: #088179;
+        color: white;
+        padding: 0.25rem 0.625rem;
+        border-radius: 2.5rem;
+        font-size: 0.6875rem; }
+        .products__wrapper .product__item .product__banner .product__badge__light__pink, .products .tab__items .tab__item .product__item .product__banner .product__badge__light__pink {
+          background: #ff75a1; }
+        .products__wrapper .product__item .product__banner .product__badge__light__green, .products .tab__items .tab__item .product__item .product__banner .product__badge__light__green {
+          background: #9abcae; }
+        .products__wrapper .product__item .product__banner .product__badge__light__orange, .products .tab__items .tab__item .product__item .product__banner .product__badge__light__orange {
+          background: #ffac75; }
+        .products__wrapper .product__item .product__banner .product__badge__light__blue, .products .tab__items .tab__item .product__item .product__banner .product__badge__light__blue {
+          background: #a1cae2; }
+    .products__wrapper .product__item .product__content, .products .tab__items .tab__item .product__item .product__content {
+      padding: 0 1.25rem 1.125rem;
+      position: relative; }
+      .products__wrapper .product__item .product__content .product__category, .products .tab__items .tab__item .product__item .product__content .product__category {
+        color: #90908e;
+        font-size: 0.75rem; }
+      .products__wrapper .product__item .product__content .product__name, .products .tab__items .tab__item .product__item .product__content .product__name {
+        font-size: 1rem;
+        margin-block: 0.75rem 0.5rem; }
+      .products__wrapper .product__item .product__content .product__stars, .products .tab__items .tab__item .product__item .product__content .product__stars {
+        font-size: 0.75rem;
+        color: #ffb300;
+        margin-bottom: 0.75rem; }
+      .products__wrapper .product__item .product__content .product__price .new__price, .products .tab__items .tab__item .product__item .product__content .product__price .new__price {
+        color: #088179;
+        font-size: 1.125rem;
+        font-weight: 600; }
+      .products__wrapper .product__item .product__content .product__price .old__price, .products .tab__items .tab__item .product__item .product__content .product__price .old__price {
+        color: #90908e;
+        font-size: 0.875rem;
+        text-decoration: line-through; }
+      .products__wrapper .product__item .product__content .bag__button, .products .tab__items .tab__item .product__item .product__content .bag__button {
+        position: absolute;
+        bottom: 1.6rem;
+        right: 1.25rem; }
+
+.btn {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: inline-block;
+  color: white;
+  border: 0.2rem solid #088179;
+  background: #088179;
+  padding-inline: 1.75rem;
+  height: 49px;
+  line-height: 49px;
+  border-radius: 0.25rem;
+  transition: all 0.38s linear; }
+  .btn:hover {
+    background: transparent;
+    color: #088179;
+    transform: scale(1.01);
+    box-shadow: 0.05rem 0.05rem 1rem 0.01rem #088179; }
+  .btn__medium {
+    font-family: "Lato", sans-serif;
+    height: 45px;
+    line-height: 40px; }
+
+.swiper__buttons, .swiper-button-next, .swiper-button-prev {
+  top: -1.875rem;
+  background: #e9f6eb;
+  border: 0.1rem solid #cbe7cf;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #088179;
+  font-size: 0.6875rem; }
+  .swiper__buttons:after, .swiper-button-next:after, .swiper-button-prev:after {
+    content: ""; }
+
+.swiper-button-next {
+  right: 0; }
+
+.swiper-button-prev {
+  left: initial;
+  right: 2.5rem; }
+
 /* =--------------------------------------= Media Query BreakPoints =------------------= */
+/* =--------= Home Page =----= */
 /* =--------------------------------------= Header Partition Styles =------------------= */
 .header .header__top {
   background: #e9f6eb;
@@ -178,9 +275,9 @@ textarea, input, button {
   justify-content: space-between;
   column-gap: 1rem; }
   .header .navbar__logo {
-    width: 150px; }
+    width: 120px; }
   .header .navbar__menu {
-    width: 100%;
+    flex-grow: 1;
     margin-left: 3.5rem; }
     .header .navbar__menu .navbar__list {
       margin-right: auto;
@@ -188,7 +285,7 @@ textarea, input, button {
       .header .navbar__menu .navbar__list .navbar__item .navbar__link {
         color: #212121;
         font-weight: 700;
-        transition: all 0.4s linear; }
+        transition: all 0.38s linear; }
         .header .navbar__menu .navbar__list .navbar__item .navbar__link__active {
           color: #088179; }
         .header .navbar__menu .navbar__list .navbar__item .navbar__link:hover {
@@ -208,7 +305,7 @@ textarea, input, button {
     .header .navbar .header__icons .header__icon__btn {
       position: relative; }
       .header .navbar .header__icons .header__icon__btn img {
-        width: 30px; }
+        width: 24px; }
       .header .navbar .header__icons .header__icon__btn .count {
         position: absolute;
         top: -0.625rem;
@@ -261,11 +358,6 @@ textarea, input, button {
       .categories .categories__wrapper .swiper__wrapper .category__item .category__title {
         color: #475c53;
         font-size: 0.875rem; }
-    .categories .categories__wrapper .swiper__button__next {
-      right: 0; }
-    .categories .categories__wrapper .swiper__button__prev {
-      left: initial;
-      right: 2.5rem; }
 
 /* =--------------------------------------= Products Partition Styles =------------------= */
 .products .tab__buttons {
@@ -286,88 +378,321 @@ textarea, input, button {
       background: #fde2bf; }
 .products .tab__items .tab__item:not(.products .tab__items .tab__item__active) {
   display: none; }
-.products .tab__items .tab__item .products__wrapper {
-  grid-template-columns: repeat(4, 1fr); }
-  .products .tab__items .tab__item .products__wrapper .product__item {
-    border: 0.15rem solid #cbe7cf;
-    border-radius: 1.5rem;
-    transition: all 0.4s linear; }
-    .products .tab__items .tab__item .products__wrapper .product__item:hover {
-      box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2); }
-      .products .tab__items .tab__item .products__wrapper .product__item:hover .product__banner .product__actions {
-        opacity: 1; }
-      .products .tab__items .tab__item .products__wrapper .product__item:hover .product__banner .product__images .product__image {
-        transform: scale(1.1); }
-        .products .tab__items .tab__item .products__wrapper .product__item:hover .product__banner .product__images .product__image__default {
-          opacity: 0; }
-        .products .tab__items .tab__item .products__wrapper .product__item:hover .product__banner .product__images .product__image__hover {
-          opacity: 1; }
-    .products .tab__items .tab__item .products__wrapper .product__item .product__banner {
-      padding: 0.625rem 0.75rem 0.75rem;
-      position: relative; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__images {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        border-radius: 1.25rem; }
-        .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__images .product__image {
-          vertical-align: middle;
-          transition: all 0.4s linear; }
-          .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__images .product__image__hover {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__actions {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        column-gap: 0.5rem;
-        opacity: 0;
-        transition: all 0.4s linear; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__badge {
-        position: absolute;
-        left: 1.25rem;
-        top: 1.25rem;
+
+/* =--------------------------------------= Deals Partition Styles =------------------= */
+.deals .deals__wrapper {
+  grid-template-columns: repeat(2, 1fr); }
+  .deals .deals__wrapper .deals__item {
+    padding: 3rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem; }
+    .deals .deals__wrapper .deals__item:nth-child(1) {
+      background: url("../../Images/Deals-01.jpg"); }
+    .deals .deals__wrapper .deals__item:nth-child(2) {
+      background: url("../../Images/Deals-02.png"); }
+    .deals .deals__wrapper .deals__item .deals__group .count_down_text {
+      margin-bottom: 0.25rem; }
+    .deals .deals__wrapper .deals__item .deals__group .count__down {
+      display: flex;
+      column-gap: 1.5rem; }
+      .deals .deals__wrapper .deals__item .deals__group .count__down__amount {
+        position: relative; }
+        .deals .deals__wrapper .deals__item .deals__group .count__down__amount:after {
+          content: ":";
+          color: #212121;
+          font-size: 1.125rem;
+          position: absolute;
+          right: -25%;
+          top: 20%; }
+        .deals .deals__wrapper .deals__item .deals__group .count__down__amount .period {
+          background: #088179;
+          color: white;
+          width: 60px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          border-radius: 0.25rem;
+          font-size: 1.125rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem; }
+        .deals .deals__wrapper .deals__item .deals__group .count__down__amount .unit {
+          display: block;
+          font-size: 0.875rem;
+          text-align: center; }
+    .deals .deals__wrapper .deals__item .deals__group .deals__brand {
+      color: #088179;
+      font-size: 1.75rem;
+      margin-bottom: 0.25rem; }
+    .deals .deals__wrapper .deals__item .deals__group .deals__category {
+      font-family: "Spartan", sans-serif;
+      font-size: 0.875rem; }
+    .deals .deals__wrapper .deals__item .deals__title {
+      max-width: 240px;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.3; }
+    .deals .deals__wrapper .deals__item .deals__price__new {
+      font-size: 1.125rem;
+      color: #ff334e; }
+    .deals .deals__wrapper .deals__item .deals__price__old {
+      font-size: 1.125rem; }
+    .deals .deals__wrapper .deals__item .deals__btn .btn {
+      background: transparent;
+      color: #088179; }
+      .deals .deals__wrapper .deals__item .deals__btn .btn:hover {
         background: #088179;
-        color: white;
-        padding: 0.25rem 0.625rem;
-        border-radius: 2.5rem;
-        font-size: 0.6875rem; }
-        .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__badge__light__pink {
-          background: #ff75a1; }
-        .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__badge__light__green {
-          background: #9abcae; }
-        .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__badge__light__orange {
-          background: #ffac75; }
-        .products .tab__items .tab__item .products__wrapper .product__item .product__banner .product__badge__light__blue {
-          background: #a1cae2; }
-    .products .tab__items .tab__item .products__wrapper .product__item .product__content {
-      padding: 0 1.25rem 1.125rem;
-      position: relative; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__content .product__category {
-        color: #90908e;
-        font-size: 0.75rem; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__content .product__name {
-        font-size: 1rem;
-        margin-block: 0.75rem 0.5rem; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__content .product__stars {
-        font-size: 0.75rem;
-        color: #ffb300;
-        margin-bottom: 0.75rem; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__content .product__price .new__price {
-        color: #088179;
-        font-size: 1.125rem;
-        font-weight: 600; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__content .product__price .old__price {
-        color: #90908e;
+        color: white; }
+
+/* =--------------------------------------= New Arrivals Styles =------------------= */
+.new__arrivals {
+  overflow: hidden; }
+  .new__arrivals .new__arrivals__wrapper {
+    overflow: initial; }
+    .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item {
+      border: 0.15rem solid #cbe7cf;
+      transition: all 0.38s linear;
+      border-radius: 1.5rem; }
+      .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item:hover {
+        box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2); }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item:hover .new__arrival__banner .new__arrival__actions {
+          opacity: 1; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item:hover .new__arrival__banner .new__arrival__images .new__arrival__image {
+          transform: scale(1.1); }
+          .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item:hover .new__arrival__banner .new__arrival__images .new__arrival__image__default {
+            opacity: 0; }
+          .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item:hover .new__arrival__banner .new__arrival__images .new__arrival__image__hover {
+            opacity: 1; }
+      .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner {
+        padding: 0.625rem 0.75rem 0.75rem;
+        position: relative; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__images {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          border-radius: 1.25rem; }
+          .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__images .new__arrival__image {
+            border-radius: 0.75rem;
+            margin-bottom: 1.25rem;
+            vertical-align: middle;
+            transition: all 0.38s linear; }
+            .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__images .new__arrival__image__hover {
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          column-gap: 0.5rem;
+          opacity: 0;
+          transition: all 0.38s linear; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__badge {
+          position: absolute;
+          left: 1.25rem;
+          top: 1.25rem;
+          background: #088179;
+          color: white;
+          padding: 0.25rem 0.625rem;
+          border-radius: 2.5rem;
+          font-size: 0.6875rem; }
+          .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__badge__light__pink {
+            background: #ff75a1; }
+          .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__badge__light__green {
+            background: #9abcae; }
+          .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__badge__light__orange {
+            background: #ffac75; }
+          .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__badge__light__blue {
+            background: #a1cae2; }
+      .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content {
+        padding: 0 1.25rem 1.125rem;
+        position: relative; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .new__arrival__category {
+          color: #90908e;
+          font-size: 0.75rem; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .new__arrival__name {
+          font-size: 1rem;
+          margin-block: 0.75rem 0.5rem; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .new__arrival__stars {
+          font-size: 0.75rem;
+          color: #ffb300;
+          margin-bottom: 0.75rem; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .new__arrival__price .new__price {
+          color: #088179;
+          font-size: 1.125rem;
+          font-weight: 600; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .new__arrival__price .old__price {
+          color: #90908e;
+          font-size: 0.875rem;
+          text-decoration: line-through; }
+        .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button {
+          position: absolute;
+          bottom: 1.6rem;
+          right: 1.25rem; }
+
+/* =--------------------------------------= ShowCase Styles =------------------= */
+.showcase .showcase__wrapper {
+  grid-template-columns: repeat(4, 1fr); }
+  .showcase .showcase__wrapper .showcase__column .partition__title {
+    font-size: 1rem;
+    border-bottom: 0.15rem solid #e3e9e2;
+    padding-bottom: 0.75rem;
+    margin-bottom: 2.5rem;
+    position: relative; }
+    .showcase .showcase__wrapper .showcase__column .partition__title:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1.3px;
+      width: 50px;
+      height: 2px;
+      background: #088179; }
+  .showcase .showcase__wrapper .showcase__column .showcase__item {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem; }
+    .showcase .showcase__wrapper .showcase__column .showcase__item:not(:last-child) {
+      margin-bottom: 1.5rem; }
+    .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__image__box .showcase__image {
+      width: 86px; }
+    .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__content {
+      width: calc(100% - 110px); }
+      .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__content .showcase__title {
         font-size: 0.875rem;
-        text-decoration: line-through; }
-      .products .tab__items .tab__item .products__wrapper .product__item .product__content .bag__button {
-        position: absolute;
-        bottom: 1.6rem;
-        right: 1.25rem; }
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0.5rem; }
+
+/* =--------------------------------------= NewsLetter Styles =------------------= */
+.newsletter {
+  margin-top: 2rem;
+  background: #adccc5; }
+  .newsletter .newsletter__wrapper {
+    grid-template-columns: repeat(2, 3.5fr) 5fr;
+    align-items: center;
+    column-gap: 3rem; }
+    .newsletter .newsletter__wrapper .newsletter__title {
+      column-gap: 1rem;
+      font-size: 1.125rem; }
+      .newsletter .newsletter__wrapper .newsletter__title .newsletter__icon {
+        width: 40px; }
+    .newsletter .newsletter__wrapper .newsletter__description {
+      color: #212121;
+      font-family: "Spartan", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600; }
+    .newsletter .newsletter__wrapper .newsletter__form {
+      display: flex; }
+      .newsletter .newsletter__wrapper .newsletter__form .newsletter__input {
+        background: white;
+        padding-inline: 1.25rem;
+        width: 100%;
+        height: 48px;
+        border-radius: 0.25rem 0 0 0.25rem;
+        font-size: 0.875rem; }
+      .newsletter .newsletter__wrapper .newsletter__form .newsletter__btn {
+        font-size: 0.875rem;
+        background: #212121;
+        color: white;
+        padding-inline: 2rem;
+        border-radius: 0 0.25rem 0.25rem 0;
+        font-family: "Spartan", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: all 0.38s linear; }
+        .newsletter .newsletter__wrapper .newsletter__form .newsletter__btn:hover {
+          background: #088179; }
+
+/* =--------------------------------------= Footer Styles =------------------= */
+.footer .footer__wrapper {
+  grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
+  padding-block: 2.5rem; }
+  .footer .footer__wrapper .footer__content .footer__sub__title {
+    color: #90908e;
+    font-size: 0.875rem;
+    margin-block: 1.025rem 0.625rem; }
+  .footer .footer__wrapper .footer__content .footer__description {
+    margin-bottom: 0.25rem; }
+    .footer .footer__wrapper .footer__content .footer__description span {
+      font-weight: 600; }
+  .footer .footer__wrapper .footer__content .footer__social .footer__sub__title {
+    margin-top: 1.875rem; }
+  .footer .footer__wrapper .footer__content .footer__social .footer__social__links {
+    column-gap: 0.25rem; }
+    .footer .footer__wrapper .footer__content .footer__social .footer__social__links .footer__social__icon {
+      width: 20px;
+      overflow: 0.7; }
+  .footer .footer__wrapper .footer__content .footer__title {
+    font-size: 1.125rem;
+    margin-block: 1rem 1.25rem; }
+  .footer .footer__wrapper .footer__content .footer__links .footer__link {
+    color: #212121;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    display: block;
+    transition: all 0.38s linear; }
+    .footer .footer__wrapper .footer__content .footer__links .footer__link:hover {
+      color: #088179;
+      margin-left: 0.25rem; }
+  .footer .footer__wrapper .footer__content .footer__logo .footer__image {
+    width: 120px; }
+.footer .footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.25rem;
+  border-top: 0.15rem solid #e3e9e2; }
+  .footer .footer__bottom .copyright {
+    color: #90908e;
+    font-size: 0.875rem; }
+  .footer .footer__bottom .creator {
+    color: #90908e;
+    font-size: 0.875rem; }
+
+/* =--------= Shop Page =----= */
+/* =--------------------------------------= BreadCrumb Partition Styles =------------------= */
+.breadcrumb {
+  background: #ededed;
+  padding-block: 1.5rem; }
+  .breadcrumb .breadcrumb__list {
+    column-gap: 0.75rem; }
+    .breadcrumb .breadcrumb__list .breadcrumb__link {
+      color: #475c53;
+      font-size: 0.875rem; }
+
+/* =--------------------------------------= Shop Styles =------------------= */
+.products .total__products {
+  margin-bottom: 2.5rem; }
+  .products .total__products span {
+    color: #088179;
+    font-weight: 600; }
+.products .pagination {
+  display: flex;
+  column-gap: 0.625rem;
+  margin-top: 2.75rem; }
+  .products .pagination .pagination__link {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 0.3rem;
+    color: #475c53;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: all 0.38s linear; }
+    .products .pagination .pagination__link:hover {
+      background: #088179;
+      color: white; }
+    .products .pagination .pagination__link__active {
+      background: #088179;
+      color: white; }
 
 /*# sourceMappingURL=Styles.css.map */
