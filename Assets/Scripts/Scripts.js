@@ -42,6 +42,20 @@ window.addEventListener("load", () => {
 			tabButton.classList.add("tab__button__active");
 		});
 	});
+
+
+	/* =--------------------------------------= Details Images Gallery =------------------= */
+	function detailsImageGallery() {
+		const imageOne = document.querySelector("#image-one");
+		const thumbnails = document.querySelectorAll(".details__thmbnail");
+		thumbnails.forEach(thumbnail => {
+			thumbnail.addEventListener("click", function() {
+				console.log(this);
+				imageOne.src = this.src;
+			});
+		});
+	};
+	detailsImageGallery();
 	
 
 });
