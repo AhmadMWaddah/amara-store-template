@@ -1,0 +1,90 @@
+/* =--------------------------------------= Details Product Partition Styles =------------------= */
+.details
+	.details__wrapper
+		grid-template-columns: 5.5fr 6.5fr
+		.details__group
+			.details__image
+				margin-bottom: 0.5rem
+			.details__thmbnails
+				grid-template-columns: repeat(4, 1fr)
+				column-gap: 0.625rem
+				.details__thmbnail
+					cursor: pointer
+			.details__title
+				font-size: $h2FontSize
+			.details__brand
+				font-size: $smallFontSize
+				margin-block: 1rem
+				span
+					color: $firstColor
+			.details__price
+				border-top: 1px solid $borderColorAlt
+				border-bottom: 1px solid $borderColorAlt
+				padding-block: 1rem
+				column-gap: 1rem
+				.new__price
+					font-size: $h2FontSize
+					color: $firstColor
+				.old__price
+					font-size: $normalFontSize
+					font-weight: 500
+			.short__description
+				margin-block: 1rem 2rem
+			.product__list
+				.list__item
+					font-size: $smallFontSize
+					margin-bottom: 0.75rem
+			.details__color
+				column-gap: 0.75rem
+				margin-block: 2rem 1.5rem
+				.details__color__title
+					font-size: $smallFontSize
+					font-weight: 600
+				.color__list
+					display: flex
+					column-gap: 0.25rem
+					.color__link
+						border-radius: 50%
+						width: 26px
+						height: 26px
+						display: block
+			.details__size
+				column-gap: 0.75rem
+				margin-bottom: 2rem
+				.details__size__title
+					font-size: $smallFontSize
+					font-weight: 600
+				.size__list
+					display: flex
+					column-gap: 0.25rem
+					.size__link
+						border: 1px solid $borderColorAlt
+						padding: 0.375rem 0.75rem 0.5rem
+						color: $textColor
+						font-size: $smallFontSize
+						&__active
+							background: $firstColor
+							color: $bodyColor
+			.details__action
+				display: flex
+				column-gap: 0.375rem
+				margin-bottom: 3.25rem
+				.quantity
+					border: 1px solid $borderColorAlt
+					font-size: $smallFontSize
+					max-width: 80px
+					padding-block: 0.5rem
+					padding-inline: 1rem 0.5rem
+					border-radius: 0.25rem
+				.details__action__btn
+					border: 1px solid $borderColorAlt
+					font-size: $smallFontSize
+					line-height: 40px
+					padding-inline: 0.75rem
+					color: $textColor
+			.details__meta
+				border: 1px solid $borderColorAlt
+				padding-top: 1rem
+				.meta__list
+					font-size: $smallFontSize
+					margin-bottom: 0.75rem

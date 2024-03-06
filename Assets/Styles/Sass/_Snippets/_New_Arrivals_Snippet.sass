@@ -1,0 +1,95 @@
+/* =--------------------------------------= New Arrivals Styles =------------------= */
+.new__arrivals
+	overflow: hidden
+	.new__arrivals__wrapper
+		overflow: initial
+		.swiper__wrapper
+			.new__arrival__item
+				border: 0.15rem solid $borderColor
+				transition: $transition
+				border-radius: 1.5rem
+				&:hover
+					box-shadow: 0 0 0.4rem hsla(0, 0%, 0%, 0.2)
+					.new__arrival__banner
+						.new__arrival__actions
+							opacity: 1
+						.new__arrival__images
+							.new__arrival__image
+								transform: scale(1.1)
+								&__default
+									opacity: 0
+								&__hover
+									opacity: 1
+				.new__arrival__banner
+					padding: 0.625rem 0.75rem 0.75rem
+					position: relative
+					.new__arrival__images
+						position: relative
+						display: block
+						overflow: hidden
+						border-radius: 1.25rem
+						.new__arrival__image
+							border-radius: 0.75rem
+							margin-bottom: 1.25rem
+							vertical-align: middle
+							transition: $transition
+							&__hover
+								position: absolute
+								top: 0
+								left: 0
+								opacity: 0
+					.new__arrival__actions
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+						display: flex
+						column-gap: 0.5rem
+						opacity: 0
+						transition: $transition
+						a
+							@extend .action__button
+					.new__arrival__badge
+						position: absolute
+						left: 1.25rem
+						top: 1.25rem
+						background: $firstColor
+						color: $bodyColor
+						padding: 0.25rem 0.625rem
+						border-radius: 2.5rem
+						font-size: $tinyFontSize
+						&__light__pink
+							background: hsl(341, 100%, 73%)
+						&__light__green
+							background: hsl(155, 20%, 67%)
+						&__light__orange
+							background: hsl(24, 100%, 73%)
+						&__light__blue
+							background: hsl(202, 53%, 76%)
+				.new__arrival__content
+						padding: 0 1.25rem 1.125rem
+						position: relative
+						.new__arrival__category
+							color: $textColorLight
+							font-size: $smallerFontSize
+						.new__arrival__name
+							font-size: $normalFontSize
+							margin-block: 0.75rem 0.5rem
+						.new__arrival__stars
+							font-size: $smallerFontSize
+							color: hsl(42, 100%, 50%)
+							margin-bottom: 0.75rem
+						.new__arrival__price
+							.new__price
+								color: $firstColor
+								font-size: $largeFontSize
+								font-weight: 600
+							.old__price
+								color: $textColorLight
+								font-size: $smallFontSize
+								text-decoration: line-through
+						.bag__button
+							@extend .action__button
+							position: absolute
+							bottom: 1.6rem
+							right: 1.25rem

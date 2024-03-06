@@ -1,0 +1,72 @@
+/* =--------------------------------------= Header Partition Styles =------------------= */
+.header
+	.header__top
+		background: $firstColorAlt
+		border-bottom: 0.15rem solid $firstColor
+		padding-block: 0.875rem
+		.header__wrapper
+			display: flex
+			align-items: center
+			justify-content: space-between
+			font-size: $smallFontSize
+			.header__alert__news
+				font-weight: 600
+				color: $textColorLight
+			.header__top__action
+				color: $textColor
+			.header__contacts
+				span:first-child
+					margin-right: 2rem
+	.navbar
+		@extend .display__flex
+		height: calc(4rem + 2.5rem)
+		justify-content: space-between
+		column-gap: 1rem
+		&__logo
+			width: 120px
+		&__menu
+			@extend .display__flex
+			flex-grow: 1
+			margin-left: 3.5rem
+			.navbar__list
+				@extend .display__flex
+				margin-right: auto
+				column-gap: 2.5rem
+				.navbar__item
+					.navbar__link
+						color: $titleColor
+						font-weight: 700
+						transition: $transition
+						&__active
+							color: $firstColor
+						&:hover
+							color: $firstColor
+			.header__search
+				width: 340px
+				position: relative
+				.form__input
+					width: 100%
+				.search__btn
+					position: absolute
+					top: 24%
+					right: 1.2rem
+					cursor: pointer
+		.header__icons
+			@extend .display__flex
+			column-gap: 1.25rem
+			.header__icon__btn
+				position: relative
+				img
+					width: 24px
+				.count
+					position: absolute
+					top: -0.625rem
+					right: -0.625rem
+					background: $firstColor
+					color: $bodyColor
+					height: 18px
+					width: 18px
+					line-height: 18px
+					border-radius: 50%
+					text-align: center
+					font-size: $tinyFontSize

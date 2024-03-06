@@ -1,0 +1,70 @@
+/* =--------------------------------------= Deals Partition Styles =------------------= */
+.deals
+	.deals__wrapper
+		grid-template-columns: repeat(2, 1fr)
+		.deals__item
+			padding: 3rem
+			background-size: cover
+			background-position: center
+			display: flex
+			flex-direction: column
+			row-gap: 1.5rem
+			&:nth-child(1)
+				background: url("../../Images/Deals-01.jpg")
+			&:nth-child(2)
+				background: url("../../Images/Deals-02.png")
+			.deals__group
+				.count_down_text
+					margin-bottom: 0.25rem
+				.count__down
+					display: flex
+					column-gap: 1.5rem
+					&__amount
+						position: relative
+						&:after
+							content: ":"
+							color: $titleColor
+							font-size: $largeFontSize
+							position: absolute
+							right: -25%
+							top: 20%
+						.period
+							background: $firstColor
+							color: $bodyColor
+							width: 60px
+							height: 50px
+							text-align: center
+							line-height: 50px
+							border-radius: 0.25rem
+							font-size: $largeFontSize
+							font-weight: 600
+							margin-bottom: 0.5rem
+						.unit
+							display: block
+							font-size: $smallFontSize
+							text-align: center
+				.deals__brand
+					color: $firstColor
+					font-size: $h3FontSize
+					margin-bottom: 0.25rem		
+				.deals__category
+					font-family: $secondFont
+					font-size: $smallFontSize
+			.deals__title
+				max-width: 240px
+				font-size: $largeFontSize
+				font-weight: 400
+				line-height: 1.3
+			.deals__price
+				&__new
+					font-size: $largeFontSize
+					color: hsl(352, 100%, 60%)
+				&__old
+					font-size: $largeFontSize
+			.deals__btn
+				.btn
+					background: transparent
+					color: $firstColor
+					&:hover
+						background: $firstColor
+						color: $bodyColor

@@ -1,0 +1,23 @@
+/* =--------------------------------------= Products Partition Styles =------------------= */
+.products
+	.tab__buttons
+		display: flex
+		column-gap: 0.75rem
+		margin-bottom: 2.5rem
+		.tab__button
+			background: $wrapperColor
+			color: $titleColor
+			padding: 1rem 1.25rem 0.875rem
+			border-radius: 0.25rem
+			font-family: $secondFont
+			font-size: $smallFontSize
+			font-weight: 600
+			cursor: pointer
+			&__active
+				color: $firstColor
+				background: $secondColor
+	.tab__items
+		.tab__item
+			&:not(&__active)
+				display: none
+			@extend .products__wrapper

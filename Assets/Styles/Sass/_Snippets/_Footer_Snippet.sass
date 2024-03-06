@@ -1,0 +1,50 @@
+
+/* =--------------------------------------= Footer Styles =------------------= */
+.footer
+	.footer__wrapper
+		grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr
+		padding-block: 2.5rem
+		.footer__content
+			.footer__sub__title
+				color: $textColorLight
+				font-size: $smallFontSize
+				margin-block: 1.025rem 0.625rem
+			.footer__description
+				margin-bottom: 0.25rem
+				span
+					font-weight: 600
+			.footer__social
+				.footer__sub__title
+					margin-top: 1.875rem
+				.footer__social__links
+					column-gap: 0.25rem
+					.footer__social__icon
+						width: 20px
+						overflow: 0.7
+			.footer__title
+				font-size: $largeFontSize
+				margin-block: 1rem 1.25rem	
+			.footer__links
+				.footer__link
+					color: $titleColor
+					font-size: $smallFontSize
+					margin-bottom: 1rem
+					display: block
+					transition: $transition
+					&:hover
+						color: $firstColor
+						margin-left: 0.25rem
+			.footer__logo
+				.footer__image
+					width: 120px
+	.footer__bottom
+		display: flex
+		justify-content: space-between
+		padding-block: 1.25rem
+		border-top: 0.15rem solid $borderColorAlt
+		.copyright
+			color: $textColorLight
+			font-size: $smallFontSize
+		.creator
+			color: $textColorLight
+			font-size: $smallFontSize

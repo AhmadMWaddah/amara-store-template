@@ -1,0 +1,37 @@
+/* =--------------------------------------= ShowCase Styles =------------------= */
+.showcase
+	.showcase__wrapper
+		grid-template-columns: repeat(4, 1fr)
+		.showcase__column
+			.partition__title
+				font-size: $normalFontSize
+				border-bottom: 0.15rem solid $borderColorAlt
+				padding-bottom: 0.75rem
+				margin-bottom: 2.5rem
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					bottom: -1.3px
+					width: 50px
+					height: 2px
+					background: $firstColor
+			.showcase__item
+				display: flex
+				align-items: center
+				column-gap: 1.5rem
+				&:not(:last-child)
+					margin-bottom: 1.5rem
+				.showcase__image__box
+					.showcase__image
+						width: 86px
+				.showcase__content
+					width: calc(100% - 110px)
+					.showcase__title
+						font-size: $smallFontSize
+						font-weight: 500
+						white-space: nowrap
+						overflow: hidden
+						text-overflow: ellipsis
+						margin-bottom: 0.5rem
