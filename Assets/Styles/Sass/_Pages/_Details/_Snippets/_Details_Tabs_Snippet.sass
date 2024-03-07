@@ -1,0 +1,62 @@
+/* =--------------------------------------= Details Tabs Partition Styles =------------------= */
+.details__tabs
+	.details__tabs__tabs
+		display: flex
+		column-gap: 1.75rem
+		margin-bottom: 3rem
+		.detail__tab__tab
+			font-family: $secondFont
+			font-size: $largeFontSize
+			font-weight: 600
+			cursor: pointer
+			&__active
+				color: $firstColor
+	.details__tabs__content
+		.detail__tab__content
+			&:not(&__active)
+				display: none
+			&__active
+			.info__tab__table
+				tr
+					th
+						border: 1px solid $borderColorAlt
+						padding: 0.625rem 1.25rem
+						font-weight: 500
+						text-align-last: left
+					td
+						border: 1px solid $borderColorAlt
+						padding: 0.625rem 1.25rem
+						color: $textColorLight
+			.reviews__wrapper
+				margin-bottom: 3rem
+				row-gap: 1.25rem
+				.review
+					border-bottom: 1px solid $borderColorAlt
+					padding-bottom: 1.2rem
+					display: flex
+					align-items: flex-start
+					column-gap: 1.5rem
+					&:last-child
+						padding-bottom: 3rem
+					.review__image
+						width: 70px
+						margin-bottom: 0.5rem
+						border-radius: 50%
+					.review__title
+						font-size: $tinyFontSize
+					.review__data
+						width: calc(100% - 94px)
+						.review__stars
+							color: hsl(42, 100%, 50%)
+							margin-bottom: 0.25rem
+							font-size: $smallFontSize
+						.review__description
+							margin-bottom: 0.5rem
+						.review__date
+							font-size: $smallFontSize
+			.review__form
+				.review__form__title
+					font-size: $largeFontSize
+					margin-bottom: 1rem
+				.review__form__stars
+					margin-bottom: 2rem

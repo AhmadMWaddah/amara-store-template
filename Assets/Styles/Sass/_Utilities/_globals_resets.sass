@@ -4,14 +4,19 @@
 	padding: 0
 	box-sizing: border-box
 
+body
+	background: $bodyColor
+
 body, textarea, input
 	color: $textColor
 	font-family: $bodyFont
 	font-size: $normalFontSize
 	font-weight: 400
 
-body
-	background: $bodyColor
+textarea, input, button
+	background: transparent
+	border: none
+	outline: none
 
 h1, h2, h3, h4
 	font-family: $secondFont
@@ -30,8 +35,7 @@ p
 img
 	max-width: 100%
 
-textarea, input, button
-	background: transparent
-	border: none
-	outline: none
+table
+	width: 100%
+	border-collapse: collapse
 

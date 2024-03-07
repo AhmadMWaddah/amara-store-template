@@ -14,14 +14,19 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background: white; }
+
 body, textarea, input {
   color: #475c53;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   font-weight: 400; }
 
-body {
-  background: white; }
+textarea, input, button {
+  background: transparent;
+  border: none;
+  outline: none; }
 
 h1, h2, h3, h4 {
   font-family: "Spartan", sans-serif;
@@ -40,10 +45,9 @@ p {
 img {
   max-width: 100%; }
 
-textarea, input, button {
-  background: transparent;
-  border: none;
-  outline: none; }
+table {
+  width: 100%;
+  border-collapse: collapse; }
 
 /* =--------------------------------------= Utilities Classes =------------------= */
 .wrapper {
@@ -51,12 +55,21 @@ textarea, input, button {
   margin-inline: auto;
   padding-inline: 0.75rem; }
 
-.form__input {
-  border: 0.15rem solid #e3e9e2;
-  padding-inline: 1rem;
-  height: 45px;
-  border-radius: 0.25rem;
-  font-size: 0.875rem; }
+.form {
+  row-gap: 1rem; }
+  .form__group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; }
+  .form__input {
+    border: 0.15rem solid #e3e9e2;
+    padding-inline: 1rem;
+    height: 45px;
+    border-radius: 0.25rem;
+    font-size: 0.875rem; }
+  .form__text__area {
+    height: 200px;
+    padding-block: 1rem;
+    resize: none; }
 
 .display__flex, .header .navbar, .header .navbar__menu, .header .navbar__menu .navbar__list, .header .navbar .header__icons {
   display: flex;
@@ -257,6 +270,7 @@ textarea, input, button {
 
 /* =--------------------------------------= Media Query BreakPoints =------------------= */
 /* =--------------------------------------= Header Partition Styles =------------------= */
+/* =--------------------------------------= Header Partition Styles =------------------= */
 .header .header__top {
   background: #e9f6eb;
   border-bottom: 0.15rem solid #088179;
@@ -323,6 +337,7 @@ textarea, input, button {
         font-size: 0.6875rem; }
 
 /* =--------------------------------------= Banner Partition Styles =------------------= */
+/* =--------------------------------------= Banner Partition Styles =------------------= */
 .banner .banner__wrapper {
   grid-template-columns: 5fr 7fr;
   align-items: center; }
@@ -346,6 +361,7 @@ textarea, input, button {
     justify-self: flex-end; }
 
 /* =--------------------------------------= Categories Partition Styles =------------------= */
+/* =--------------------------------------= Categories Partition Styles =------------------= */
 .categories {
   overflow: hidden; }
   .categories .categories__wrapper {
@@ -362,6 +378,7 @@ textarea, input, button {
         color: #475c53;
         font-size: 0.875rem; }
 
+/* =--------------------------------------= Products Partition Styles =------------------= */
 /* =--------------------------------------= Products Partition Styles =------------------= */
 .products .tab__buttons {
   display: flex;
@@ -382,6 +399,7 @@ textarea, input, button {
 .products .tab__items .tab__item:not(.products .tab__items .tab__item__active) {
   display: none; }
 
+/* =--------------------------------------= Deals Partition Styles =------------------= */
 /* =--------------------------------------= Deals Partition Styles =------------------= */
 .deals .deals__wrapper {
   grid-template-columns: repeat(2, 1fr); }
@@ -449,6 +467,7 @@ textarea, input, button {
         background: #088179;
         color: white; }
 
+/* =--------------------------------------= New Arrivals Styles =------------------= */
 /* =--------------------------------------= New Arrivals Styles =------------------= */
 .new__arrivals {
   overflow: hidden; }
@@ -539,6 +558,7 @@ textarea, input, button {
           right: 1.25rem; }
 
 /* =--------------------------------------= ShowCase Styles =------------------= */
+/* =--------------------------------------= ShowCase Styles =------------------= */
 .showcase .showcase__wrapper {
   grid-template-columns: repeat(4, 1fr); }
   .showcase .showcase__wrapper .showcase__column .partition__title {
@@ -573,6 +593,7 @@ textarea, input, button {
         text-overflow: ellipsis;
         margin-bottom: 0.5rem; }
 
+/* =--------------------------------------= NewsLetter Styles =------------------= */
 /* =--------------------------------------= NewsLetter Styles =------------------= */
 .newsletter {
   margin-top: 2rem;
@@ -614,6 +635,7 @@ textarea, input, button {
         .newsletter .newsletter__wrapper .newsletter__form .newsletter__btn:hover {
           background: #088179; }
 
+/* =--------------------------------------= Footer Styles =------------------= */
 /* =--------------------------------------= Footer Styles =------------------= */
 .footer .footer__wrapper {
   grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
@@ -660,7 +682,8 @@ textarea, input, button {
     font-size: 0.875rem; }
 
 /* =--------------------------------------= Shop Page Styles =------------------= */
-/* =--------= Shop Page =----= */
+/* =--------= Shop Page Styles =----= */
+/* =--------------------------------------= BreadCrumb Partition Styles =------------------= */
 /* =--------------------------------------= BreadCrumb Partition Styles =------------------= */
 .breadcrumb {
   background: #ededed;
@@ -671,6 +694,7 @@ textarea, input, button {
       color: #475c53;
       font-size: 0.875rem; }
 
+/* =--------------------------------------= Shop Styles =------------------= */
 /* =--------------------------------------= Shop Styles =------------------= */
 .products .total__products {
   margin-bottom: 2.5rem; }
@@ -701,7 +725,8 @@ textarea, input, button {
 
 /* =--------------------------------------= Details Page Styles =------------------= */
 /* =--------= Details Page =----= */
-/* =--------------------------------------= BreadCrumb Partition Styles =------------------= */
+/* =--------------------------------------= Details Product Partition Styles =------------------= */
+/* =--------------------------------------= Details Product Partition Styles =------------------= */
 .details .details__wrapper {
   grid-template-columns: 5.5fr 6.5fr; }
   .details .details__wrapper .details__group .details__image {
@@ -788,5 +813,64 @@ textarea, input, button {
     .details .details__wrapper .details__group .details__meta .meta__list {
       font-size: 0.875rem;
       margin-bottom: 0.75rem; }
+
+/* =--------------------------------------= Details Tabs Partition Styles =------------------= */
+/* =--------------------------------------= Details Tabs Partition Styles =------------------= */
+.details__tabs .details__tabs__tabs {
+  display: flex;
+  column-gap: 1.75rem;
+  margin-bottom: 3rem; }
+  .details__tabs .details__tabs__tabs .detail__tab__tab {
+    font-family: "Spartan", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer; }
+    .details__tabs .details__tabs__tabs .detail__tab__tab__active {
+      color: #088179; }
+.details__tabs .details__tabs__content .detail__tab__content:not(.details__tabs .details__tabs__content .detail__tab__content__active) {
+  display: none; }
+.details__tabs .details__tabs__content .detail__tab__content .info__tab__table tr th {
+  border: 1px solid #e3e9e2;
+  padding: 0.625rem 1.25rem;
+  font-weight: 500;
+  text-align-last: left; }
+.details__tabs .details__tabs__content .detail__tab__content .info__tab__table tr td {
+  border: 1px solid #e3e9e2;
+  padding: 0.625rem 1.25rem;
+  color: #90908e; }
+.details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper {
+  margin-bottom: 3rem;
+  row-gap: 1.25rem; }
+  .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review {
+    border-bottom: 1px solid #e3e9e2;
+    padding-bottom: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1.5rem; }
+    .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review:last-child {
+      padding-bottom: 3rem; }
+    .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review .review__image {
+      width: 70px;
+      margin-bottom: 0.5rem;
+      border-radius: 50%; }
+    .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review .review__title {
+      font-size: 0.6875rem; }
+    .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review .review__data {
+      width: calc(100% - 94px); }
+      .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review .review__data .review__stars {
+        color: #ffb300;
+        margin-bottom: 0.25rem;
+        font-size: 0.875rem; }
+      .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review .review__data .review__description {
+        margin-bottom: 0.5rem; }
+      .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review .review__data .review__date {
+        font-size: 0.875rem; }
+.details__tabs .details__tabs__content .detail__tab__content .review__form .review__form__title {
+  font-size: 1.125rem;
+  margin-bottom: 1rem; }
+.details__tabs .details__tabs__content .detail__tab__content .review__form .review__form__stars {
+  margin-bottom: 2rem; }
+
+/* =--------------------------------------= Related Products Partition Styles =------------------= */
 
 /*# sourceMappingURL=Styles.css.map */
