@@ -1,4 +1,5 @@
 /* =--------------------------------------= Components Classes =------------------= */
+/* =--------= Action Button =----= */
 .action__button
 	width: 40px
 	height: 40px
@@ -47,6 +48,7 @@
 		transition: $transition
 		opacity: 0
 
+/* =--------= Products Wrapper =----= */
 .products__wrapper
 	grid-template-columns: repeat(4, 1fr)
 	.product__item
@@ -137,6 +139,7 @@
 				bottom: 1.6rem
 				right: 1.25rem
 
+/* =--------= Buttons =----= */
 .btn
 	font-family: $secondFont
 	font-size: $smallFontSize
@@ -164,6 +167,7 @@
 		height: 40px
 		line-height: 36px
 
+/* =--------= Custom Swiper Buttons =----= */
 .swiper__buttons
 	top: -1.875rem
 	background: $firstColorAlt
@@ -176,11 +180,74 @@
 	&:after
 		content: ""	
 
+/* =--------= Basic Swiper Buttons =----= */
 .swiper-button-next
 	@extend .swiper__buttons
 	right: 0
-	
+
 .swiper-button-prev
 	@extend .swiper__buttons
 	left: initial
 	right: 2.5rem
+
+/* =--------= Table =----= */
+.table__wrapper
+	overflow-x: auto
+	.table
+		table-layout: fixed
+		margin-bottom: 2rem
+		tr
+			border-top: 1px solid $borderColorAlt
+			&:last-child
+				border-bottom: 1px solid $borderColorAlt
+			th
+				padding: 0.5rem
+				text-align: center
+				&:nth-child(1)
+					width: 216px
+				&:nth-child(2)
+					width: 400px
+				&:nth-child(3)
+					width: 108px
+				&:nth-child(4)
+					width: 220px
+				&:nth-child(5)
+					width: 200px
+				&:nth-child(6)
+					width: 152px
+			td
+				padding: 0.5rem
+				text-align: center
+				&:nth-child(1)
+					width: 216px
+				&:nth-child(2)
+					width: 400px
+				&:nth-child(3)
+					width: 108px
+				&:nth-child(4)
+					width: 220px
+				&:nth-child(5)
+					width: 200px
+				&:nth-child(6)
+					width: 152px
+				.table__image
+					width: 80px
+				.table__title
+					font-size: $smallFontSize
+					color: $firstColor
+				.table__description
+					font-size: $smallFontSize
+					max-width: 250px
+					margin-inline: auto
+				.table__price
+					font-size: $smallFontSize
+				.table__sub__total
+					font-size: $smallFontSize
+				.table__availability
+					font-size: $smallFontSize
+					color: $firstColor
+					&__red
+						color: $errorNegateColor
+				.table__trash
+					font-size: $smallFontSize
+					color: $textColorLight

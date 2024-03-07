@@ -50,6 +50,7 @@ table {
   border-collapse: collapse; }
 
 /* =--------------------------------------= Components Classes =------------------= */
+/* =--------= Action Button =----= */
 .action__button, .products__wrapper .product__item .product__banner .product__actions a, .products .tab__items .tab__item .product__item .product__banner .product__actions a, .products__wrapper .product__item .product__content .bag__button, .products .tab__items .tab__item .product__item .product__content .bag__button, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button {
   width: 40px;
   height: 40px;
@@ -98,6 +99,7 @@ table {
     transition: all 0.38s linear;
     opacity: 0; }
 
+/* =--------= Products Wrapper =----= */
 .products__wrapper, .products .tab__items .tab__item {
   grid-template-columns: repeat(4, 1fr); }
   .products__wrapper .product__item, .products .tab__items .tab__item .product__item {
@@ -182,6 +184,7 @@ table {
         bottom: 1.6rem;
         right: 1.25rem; }
 
+/* =--------= Buttons =----= */
 .btn {
   font-family: "Spartan", sans-serif;
   font-size: 0.875rem;
@@ -209,6 +212,7 @@ table {
     height: 40px;
     line-height: 36px; }
 
+/* =--------= Custom Swiper Buttons =----= */
 .swiper__buttons, .swiper-button-next, .swiper-button-prev {
   top: -1.875rem;
   background: #e9f6eb;
@@ -221,12 +225,75 @@ table {
   .swiper__buttons:after, .swiper-button-next:after, .swiper-button-prev:after {
     content: ""; }
 
+/* =--------= Basic Swiper Buttons =----= */
 .swiper-button-next {
   right: 0; }
 
 .swiper-button-prev {
   left: initial;
   right: 2.5rem; }
+
+/* =--------= Table =----= */
+.table__wrapper, .bags, .wishlist {
+  overflow-x: auto; }
+  .table__wrapper .table, .bags .table, .wishlist .table {
+    table-layout: fixed;
+    margin-bottom: 2rem; }
+    .table__wrapper .table tr, .bags .table tr, .wishlist .table tr {
+      border-top: 1px solid #e3e9e2; }
+      .table__wrapper .table tr:last-child, .bags .table tr:last-child, .wishlist .table tr:last-child {
+        border-bottom: 1px solid #e3e9e2; }
+      .table__wrapper .table tr th, .bags .table tr th, .wishlist .table tr th {
+        padding: 0.5rem;
+        text-align: center; }
+        .table__wrapper .table tr th:nth-child(1), .bags .table tr th:nth-child(1), .wishlist .table tr th:nth-child(1) {
+          width: 216px; }
+        .table__wrapper .table tr th:nth-child(2), .bags .table tr th:nth-child(2), .wishlist .table tr th:nth-child(2) {
+          width: 400px; }
+        .table__wrapper .table tr th:nth-child(3), .bags .table tr th:nth-child(3), .wishlist .table tr th:nth-child(3) {
+          width: 108px; }
+        .table__wrapper .table tr th:nth-child(4), .bags .table tr th:nth-child(4), .wishlist .table tr th:nth-child(4) {
+          width: 220px; }
+        .table__wrapper .table tr th:nth-child(5), .bags .table tr th:nth-child(5), .wishlist .table tr th:nth-child(5) {
+          width: 200px; }
+        .table__wrapper .table tr th:nth-child(6), .bags .table tr th:nth-child(6), .wishlist .table tr th:nth-child(6) {
+          width: 152px; }
+      .table__wrapper .table tr td, .bags .table tr td, .wishlist .table tr td {
+        padding: 0.5rem;
+        text-align: center; }
+        .table__wrapper .table tr td:nth-child(1), .bags .table tr td:nth-child(1), .wishlist .table tr td:nth-child(1) {
+          width: 216px; }
+        .table__wrapper .table tr td:nth-child(2), .bags .table tr td:nth-child(2), .wishlist .table tr td:nth-child(2) {
+          width: 400px; }
+        .table__wrapper .table tr td:nth-child(3), .bags .table tr td:nth-child(3), .wishlist .table tr td:nth-child(3) {
+          width: 108px; }
+        .table__wrapper .table tr td:nth-child(4), .bags .table tr td:nth-child(4), .wishlist .table tr td:nth-child(4) {
+          width: 220px; }
+        .table__wrapper .table tr td:nth-child(5), .bags .table tr td:nth-child(5), .wishlist .table tr td:nth-child(5) {
+          width: 200px; }
+        .table__wrapper .table tr td:nth-child(6), .bags .table tr td:nth-child(6), .wishlist .table tr td:nth-child(6) {
+          width: 152px; }
+        .table__wrapper .table tr td .table__image, .bags .table tr td .table__image, .wishlist .table tr td .table__image {
+          width: 80px; }
+        .table__wrapper .table tr td .table__title, .bags .table tr td .table__title, .wishlist .table tr td .table__title {
+          font-size: 0.875rem;
+          color: #088179; }
+        .table__wrapper .table tr td .table__description, .bags .table tr td .table__description, .wishlist .table tr td .table__description {
+          font-size: 0.875rem;
+          max-width: 250px;
+          margin-inline: auto; }
+        .table__wrapper .table tr td .table__price, .bags .table tr td .table__price, .wishlist .table tr td .table__price {
+          font-size: 0.875rem; }
+        .table__wrapper .table tr td .table__sub__total, .bags .table tr td .table__sub__total, .wishlist .table tr td .table__sub__total {
+          font-size: 0.875rem; }
+        .table__wrapper .table tr td .table__availability, .bags .table tr td .table__availability, .wishlist .table tr td .table__availability {
+          font-size: 0.875rem;
+          color: #088179; }
+          .table__wrapper .table tr td .table__availability__red, .bags .table tr td .table__availability__red, .wishlist .table tr td .table__availability__red {
+            color: #990f02; }
+        .table__wrapper .table tr td .table__trash, .bags .table tr td .table__trash, .wishlist .table tr td .table__trash {
+          font-size: 0.875rem;
+          color: #90908e; }
 
 /* =--------------------------------------= Utilities Classes =------------------= */
 .wrapper {
@@ -468,7 +535,7 @@ table {
         color: white; }
 
 /* =--------------------------------------= New Arrivals Styles =------------------= */
-/* =--------------------------------------= New Arrivals Styles =------------------= */
+/* =--------------------------------------= New Arrivals Partition Styles =------------------= */
 .new__arrivals {
   overflow: hidden; }
   .new__arrivals .new__arrivals__wrapper {
@@ -558,7 +625,7 @@ table {
           right: 1.25rem; }
 
 /* =--------------------------------------= ShowCase Styles =------------------= */
-/* =--------------------------------------= ShowCase Styles =------------------= */
+/* =--------------------------------------= ShowCase Partition Styles =------------------= */
 .showcase .showcase__wrapper {
   grid-template-columns: repeat(4, 1fr); }
   .showcase .showcase__wrapper .showcase__column .partition__title {
@@ -594,7 +661,7 @@ table {
         margin-bottom: 0.5rem; }
 
 /* =--------------------------------------= NewsLetter Styles =------------------= */
-/* =--------------------------------------= NewsLetter Styles =------------------= */
+/* =--------------------------------------= NewsLetter Partition Styles =------------------= */
 .newsletter {
   margin-top: 2rem;
   background: #adccc5; }
@@ -636,7 +703,7 @@ table {
           background: #088179; }
 
 /* =--------------------------------------= Footer Styles =------------------= */
-/* =--------------------------------------= Footer Styles =------------------= */
+/* =--------------------------------------= Footer Partition Styles =------------------= */
 .footer .footer__wrapper {
   grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
   padding-block: 2.5rem; }
@@ -695,7 +762,7 @@ table {
       font-size: 0.875rem; }
 
 /* =--------------------------------------= Shop Styles =------------------= */
-/* =--------------------------------------= Shop Styles =------------------= */
+/* =--------------------------------------= Shop Product Partition Styles =------------------= */
 .products .total__products {
   margin-bottom: 2.5rem; }
   .products .total__products span {
@@ -877,62 +944,6 @@ table {
 /* =--------= Bags Page Styles =----= */
 /* =--------------------------------------= Bags Table Partition Styles =------------------= */
 /* =--------------------------------------= Bag Table Partition Styles =------------------= */
-.bags .table__wrapper {
-  overflow-x: auto; }
-  .bags .table__wrapper .table {
-    table-layout: fixed;
-    margin-bottom: 2rem; }
-    .bags .table__wrapper .table tr {
-      border-top: 1px solid #e3e9e2; }
-      .bags .table__wrapper .table tr:last-child {
-        border-bottom: 1px solid #e3e9e2; }
-      .bags .table__wrapper .table tr th {
-        padding: 0.5rem;
-        text-align: center; }
-        .bags .table__wrapper .table tr th:nth-child(1) {
-          width: 216px; }
-        .bags .table__wrapper .table tr th:nth-child(2) {
-          width: 400px; }
-        .bags .table__wrapper .table tr th:nth-child(3) {
-          width: 108px; }
-        .bags .table__wrapper .table tr th:nth-child(4) {
-          width: 220px; }
-        .bags .table__wrapper .table tr th:nth-child(5) {
-          width: 200px; }
-        .bags .table__wrapper .table tr th:nth-child(6) {
-          width: 152px; }
-      .bags .table__wrapper .table tr td {
-        padding: 0.5rem;
-        text-align: center; }
-        .bags .table__wrapper .table tr td:nth-child(1) {
-          width: 216px; }
-        .bags .table__wrapper .table tr td:nth-child(2) {
-          width: 400px; }
-        .bags .table__wrapper .table tr td:nth-child(3) {
-          width: 108px; }
-        .bags .table__wrapper .table tr td:nth-child(4) {
-          width: 220px; }
-        .bags .table__wrapper .table tr td:nth-child(5) {
-          width: 200px; }
-        .bags .table__wrapper .table tr td:nth-child(6) {
-          width: 152px; }
-        .bags .table__wrapper .table tr td .table__image {
-          width: 80px; }
-        .bags .table__wrapper .table tr td .table__title {
-          font-size: 0.875rem;
-          color: #088179; }
-        .bags .table__wrapper .table tr td .table__description {
-          font-size: 0.875rem;
-          max-width: 250px;
-          margin-inline: auto; }
-        .bags .table__wrapper .table tr td .table__price {
-          font-size: 0.875rem; }
-        .bags .table__wrapper .table tr td .table__sub__total {
-          font-size: 0.875rem; }
-        .bags .table__wrapper .table tr td .table__trash {
-          font-size: 0.875rem;
-          color: #90908e; }
-
 /* =--------------------------------------= Bags Table Partition Styles =------------------= */
 /* =--------------------------------------= Bag Table Partition Styles =------------------= */
 .bags .bag__actions {
@@ -991,5 +1002,10 @@ table {
           font-weight: 700; }
     .bags .bag__group .group__total .btn {
       display: inline-flex; }
+
+/* =--------------------------------------= Details Page Styles =------------------= */
+/* =--------= WishLists Page Styles =----= */
+/* =--------------------------------------= WishLists Styles =------------------= */
+/* =--------------------------------------= WishList Partition Styles =------------------= */
 
 /*# sourceMappingURL=Styles.css.map */
