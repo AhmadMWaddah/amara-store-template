@@ -534,7 +534,7 @@ table {
         background: #088179;
         color: white; }
 
-/* =--------------------------------------= New Arrivals Styles =------------------= */
+/* =--------------------------------------= New Arrivals Partition Styles =------------------= */
 /* =--------------------------------------= New Arrivals Partition Styles =------------------= */
 .new__arrivals {
   overflow: hidden; }
@@ -624,7 +624,7 @@ table {
           bottom: 1.6rem;
           right: 1.25rem; }
 
-/* =--------------------------------------= ShowCase Styles =------------------= */
+/* =--------------------------------------= ShowCase Partition Styles =------------------= */
 /* =--------------------------------------= ShowCase Partition Styles =------------------= */
 .showcase .showcase__wrapper {
   grid-template-columns: repeat(4, 1fr); }
@@ -660,7 +660,7 @@ table {
         text-overflow: ellipsis;
         margin-bottom: 0.5rem; }
 
-/* =--------------------------------------= NewsLetter Styles =------------------= */
+/* =--------------------------------------= NewsLetter Partition Styles =------------------= */
 /* =--------------------------------------= NewsLetter Partition Styles =------------------= */
 .newsletter {
   margin-top: 2rem;
@@ -702,7 +702,7 @@ table {
         .newsletter .newsletter__wrapper .newsletter__form .newsletter__btn:hover {
           background: #088179; }
 
-/* =--------------------------------------= Footer Styles =------------------= */
+/* =--------------------------------------= Footer Partition Styles =------------------= */
 /* =--------------------------------------= Footer Partition Styles =------------------= */
 .footer .footer__wrapper {
   grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
@@ -940,7 +940,7 @@ table {
 
 /* =--------------------------------------= Related Products Partition Styles =------------------= */
 /* =--------------------------------------= Related Products Partition Styles =------------------= */
-/* =--------------------------------------= Details Page Styles =------------------= */
+/* =--------------------------------------= Bags Page Styles =------------------= */
 /* =--------= Bags Page Styles =----= */
 /* =--------------------------------------= Bags Table Partition Styles =------------------= */
 /* =--------------------------------------= Bag Table Partition Styles =------------------= */
@@ -1003,9 +1003,26 @@ table {
     .bags .bag__group .group__total .btn {
       display: inline-flex; }
 
-/* =--------------------------------------= Details Page Styles =------------------= */
+/* =--------------------------------------= WishLists Page Styles =------------------= */
 /* =--------= WishLists Page Styles =----= */
 /* =--------------------------------------= WishLists Styles =------------------= */
 /* =--------------------------------------= WishList Partition Styles =------------------= */
+/* =--------------------------------------= SignUp - SignIn Page Styles =------------------= */
+/* =--------= SignUp - SignIn Page Styles =----= */
+.signup__signin .signup__signin__wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  /* =--------------------------------------= Sign Up Partition Styles =------------------= */
+  /* =--------------------------------------= Sign Up Partition Styles =------------------= */
+  /* =--------------------------------------= Sign In Partition Styles =------------------= */
+  /* =--------------------------------------= Sign In Partition Styles =------------------= */ }
+  .signup__signin .signup__signin__wrapper .sign__Up {
+    border: 1px solid #e3e9e2;
+    padding: 2rem;
+    border-radius: 0.5rem; }
+  .signup__signin .signup__signin__wrapper .sign__in {
+    border: 1px solid #e3e9e2;
+    padding: 2rem;
+    border-radius: 0.5rem; }
 
 /*# sourceMappingURL=Styles.css.map */
