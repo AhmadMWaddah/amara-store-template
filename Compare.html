@@ -1,43 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+	<!-- =--------------------------------------= Meta Tags =------------------= -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- =--------------------------------------= Styles Links =------------------= -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="Assets/Styles/Css/Styles.css" />
+	<title>Amara Store Template</title>
+</head>
+<body>
 
-    <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+	<!-- =--------------------------------------= Start Header Partition =------------------= -->
+	<header class="header">
+		<div class="header__top">
+			<div class="header__wrapper wrapper">
+				<div class="header__contact">
+					<span>(+20)-1141591695</span>
+					<span>Our Location</span>
+				</div>
+				<p class="header__alert__news">Lorem ipsum dolor sit, amet consectetur.</p>
+				<a class="header__top__action" href="Sign_Up-Sign_In.html">Sign In / Sign Up</a>
+			</div>
+		</div>
+		<nav class="navbar wrapper">
+			<a href="index.html" class="navbar__logo">
+				<img src="Assets/Images/Logo.svg" class="navbar__logo__image" />
+			</a>
+			<div class="navbar__menu" id="navbar-menu">
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a href="index.html" class="navbar__link">Home</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Shop.html" class="navbar__link">Shop</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Accounts.html" class="navbar__link">My Account</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Compare.html" class="navbar__link navbar__link__active">Compare</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Sign_Up-Sign_In.html" class="navbar__link">Sign In</a>
+					</li>
+				</ul>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+				<div class="header__search">
+					<input class="form__input" type="text" placeholder="Search ..." />
+					<button class="search__btn">
+						<img src="Assets/Images/Icon-Search.png" />
+					</button>
+				</div>
+			</div>
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header"></header>
+			<div class="header__icons">
+				<a href="WishList.html" class="header__icon__btn">
+					<img src="Assets/Images/Icon-Heart.svg" />
+					<span class="count">2</span>
+				</a>
+				<a href="Bags.html" class="header__icon__btn">
+					<img src="Assets/Images/Icon-Bag.svg" />
+					<span class="count">6</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- =--------------------------------------= End Header Partition =------------------= -->
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
 
-      <!--=============== COMPARE ===============-->
-      <section class="compare"></section>
+	<!-- =--------------------------------------= Start Main Partition =------------------= -->
+	<main class="main">
 
-      <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter"></section>
-    </main>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+		<!-- =--------------------------------------= Start BreadCrumb Partition =------------------= -->
+		<section class="breadcrumb">
+			<ul class="breadcrumb__list wrapper display__flex">
+				<li>
+					<a href="index.html" class="breadcrumb__link">Home</a>
+				</li>
+				<li>
+					<span class="breadcrumb__link">&#45; &#62;</span>
+				</li>
+				<li>
+					<a href="Shop.html" class="breadcrumb__link">Shop</a>
+				</li>
+				<li>
+					<span class="breadcrumb__link">&#45; &#62;</span>
+				</li>
+				<li>
+					<span class="breadcrumb__link">Compare</span>
+				</li>
+			</ul>
+		</section>
+		<!-- =--------------------------------------= End BreadCrumb Partition =------------------= -->
 
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src=""></script>
-  </body>
+		<!-- =--------------------------------------= Start Compare Partition =------------------= -->
+		<section class="compare wrapper partition__large">
+			<table class="compare__table">
+				<tr>
+					<th>Image</th>
+					<td>
+						<img src="Assets/Images/Product-10-01.jpg" class="compare__image" />
+					</td>
+					<td>
+						<img src="Assets/Images/Product-03-01.jpg" class="compare__image" />
+					</td>
+					<td>
+						<img src="Assets/Images/Product-08-01.jpg" class="compare__image" />
+					</td>
+				</tr>
+				<tr>
+					<th>Name</th>
+					<td>
+						<h3 class="table__title">Lorem ipsum dolor sit amet</h3>
+					</td>
+					<td>
+						<h3 class="table__title">Lorem, ipsum dolor si amet</h3>
+					</td>
+					<td>
+						<h3 class="table__title">Lorem ipsum, dolor si amet</h3>
+					</td>
+				</tr>
+				<tr>
+					<th>Price</th>
+					<td>
+						<span class="table__price">&dollar;325.46</span>
+					</td>
+					<td>
+						<span class="table__price">&dollar;325.46</span>
+					</td>
+					<td>
+						<span class="table__price">&dollar;325.46</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<td>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem magnam non exercitationem illum doloremque harum dolore voluptates veniam quisquam pariatur.</p>
+					</td>
+					<td>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Pariatur minima ipsa adipisci quisquam fugiat. Quae eaque culpa tenetur. Earum, natus!</p>
+					</td>
+					<td>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio qui veritatis accusantium sapiente omnis atque modi sed illo nam animi!</p>
+					</td>
+				</tr>
+				<tr>
+					<th>Colors</th>
+					<td>
+						<ul class="color__list compare__colors">
+							<li>
+								<a href="#" class="color__link" style="background: hsl(37, 100%, 65%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(535, 100%, 67%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(49, 100%, 60%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(304, 100%, 78%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(126, 61%, 52%);"></a>
+							</li>
+						</ul>
+					</td>
+					<td>
+						<ul class="color__list compare__colors">
+							<li>
+								<a href="#" class="color__link" style="background: hsl(37, 100%, 65%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(535, 100%, 67%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(49, 100%, 60%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(304, 100%, 78%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(126, 61%, 52%);"></a>
+							</li>
+						</ul>
+					</td>
+					<td>
+						<ul class="color__list compare__colors">
+							<li>
+								<a href="#" class="color__link" style="background: hsl(37, 100%, 65%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(535, 100%, 67%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(49, 100%, 60%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(304, 100%, 78%);"></a>
+							</li>
+							<li>
+								<a href="#" class="color__link" style="background: hsl(126, 61%, 52%);"></a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>Availabilty</th>
+					<td>
+						<span class="table__availability">Available</span>
+					</td>
+					<td>
+						<span class="table__availability">Available</span>
+					</td>
+					<td>
+						<span class="table__availability__red">Unavailable</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Weight</th>
+					<td>
+						<span class="table__weight">1.6 Kg.</span>
+					</td>
+					<td>
+						<span class="table__weight">1.6 Kg.</span>
+					</td>
+					<td>
+						<span class="table__weight">1.6 Kg.</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Dimensions</th>
+					<td>
+						<span class="table__dimensions">N/A</span>
+					</td>
+					<td>
+						<span class="table__dimensions">N/A</span>
+					</td>
+					<td>
+						<span class="table__dimensions">N/A</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Buy</th>
+					<td>
+						<a href="#" class="btn btn__small">Add To Bag</a>
+					</td>
+					<td>
+						<a href="#" class="btn btn__small">Add To Bag</a>
+					</td>
+					<td>
+						<a href="#" class="btn btn__small">Add To Bag</a>
+					</td>
+				</tr>
+				<tr>
+					<th>Remove</th>
+					<td>
+						<i class="fi fi-br-trash-xmark table__trash"></i>
+					</td>
+					<td>
+						<i class="fi fi-br-trash-xmark table__trash"></i>
+					</td>
+					<td>
+						<i class="fi fi-br-trash-xmark table__trash"></i>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<!-- =--------------------------------------= End Compare Partition =------------------= -->
+
+
+		<!-- =--------------------------------------= Start NewsLetter Partition =------------------= -->
+		<section class="newsletter partition">
+			<div class="newsletter__wrapper wrapper display__grid">
+				<h3 class="newsletter__title display__flex">
+					<img src="Assets/Images/Icon-EMail.svg" class="newsletter__icon" />
+					Sign Up To Our NewsLetter
+				</h3>
+				<p class="newsletter__description">Lorem ipsum, dolor sit amet consectetur.</p>
+				<form action="" class="newsletter__form">
+					<input type="text" class="newsletter__input" placeholder="Enter Your EMail..." />
+					<button type="submit" class="newsletter__btn">Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<!-- =--------------------------------------= End NewsLetter Partition =------------------= -->
+
+
+	</main>
+	<!-- =--------------------------------------= End Main Partition =------------------= -->
+
+
+	<!-- =--------------------------------------= Start Footer Partition =------------------= -->
+	<footer class="footer wrapper">
+		<div class="footer__wrapper display__grid">
+			<div class="footer__content">
+				<a href="index.html" class="footer__logo">
+					<img src="Assets/Images/Logo.svg" class="footer__image" />
+				</a>
+				<h4 class="footer__sub__title">Contact</h4>
+				<p class="footer__description">
+					<span>Address:</span>
+					Lorem ipsum dolor, sit amet consectetur adipisicing.
+				</p>
+				<p class="footer__description">
+					<span>Phone:</span>
+					+20 114 159 169 5.
+				</p>
+				<p class="footer__description">
+					<span>Hours:</span>
+					02:00 - 14:30, Sat - Thu
+				</p>
+				<div class="footer__social">
+					<h4 class="footer__sub__title">Follow Me</h4>
+					<div class="footer__social__links">
+						<a href="#">
+							<img src="Assets/Images/Icon-Facebook.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Twitter.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Instagram.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Pinterest.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-YouTube.svg" class="footer__social__icon" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__content">
+				<h4 class="footer__title">Address</h4>
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer__link">About Us</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Delivery Inforamtion</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Terms & Conditions</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Contact Us</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Support Center</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				<h4 class="footer__title">My Account</h4>
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer__link">Sign In</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">View Shopping Bag</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">My WhishList</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Track My Order</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Help</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">My Orders</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				<h3 class="footer__title">Payment GateWays</h3>
+				<img src="Assets/Images/Payments-Cards.png" class="payment__image" />
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<p class="copyright">&copy; 2024 AMW All Rights Reserved</p>
+			<span class="creator">Created By Ahmad Muhammad Waddah</span>
+		</div>
+	</footer>
+	<!-- =--------------------------------------= End Footer Partition =------------------= -->
+
+
+	<!-- =--------------------------------------= JavaScripts Scripts =------------------= -->
+	<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script defer type="text/javascript" src="Assets/Scripts/Scripts.js"></script>
+
+
+</body>
 </html>
