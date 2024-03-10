@@ -1,0 +1,17 @@
+/* =--------------------------------------= Account Partition Styles =------------------= */
+.accounts__tabs
+	border: 1px solid $borderColorAlt
+	border-radius: 0.25rem
+	.account__tab
+		padding: 1rem 2rem
+		color: $titleColor
+		font-size: $smallFontSize
+		display: flex
+		align-items: center
+		column-gap: 0.625rem
+		cursor: pointer
+		&__active
+			background: $firstColor
+			color: $bodyColor
+		&:not(:last-child)
+			border-bottom: 1px solid $borderColorAlt

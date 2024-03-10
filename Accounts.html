@@ -1,43 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+	<!-- =--------------------------------------= Meta Tags =------------------= -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- =--------------------------------------= Styles Links =------------------= -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="Assets/Styles/Css/Styles.css" />
+	<title>Amara Store Template</title>
+</head>
+<body>
 
-    <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+	<!-- =--------------------------------------= Start Header Partition =------------------= -->
+	<header class="header">
+		<div class="header__top">
+			<div class="header__wrapper wrapper">
+				<div class="header__contact">
+					<span>(+20)-1141591695</span>
+					<span>Our Location</span>
+				</div>
+				<p class="header__alert__news">Lorem ipsum dolor sit, amet consectetur.</p>
+				<a class="header__top__action" href="Sign_Up-Sign_In.html">Sign In / Sign Up</a>
+			</div>
+		</div>
+		<nav class="navbar wrapper">
+			<a href="index.html" class="navbar__logo">
+				<img src="Assets/Images/Logo.svg" class="navbar__logo__image" />
+			</a>
+			<div class="navbar__menu" id="navbar-menu">
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a href="index.html" class="navbar__link">Home</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Shop.html" class="navbar__link">Shop</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Accounts.html" class="navbar__link navbar__link__active">My Account</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Compare.html" class="navbar__link">Compare</a>
+					</li>
+					<li class="navbar__item">
+						<a href="Sign_Up-Sign_In.html" class="navbar__link">Sign In</a>
+					</li>
+				</ul>
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+				<div class="header__search">
+					<input class="form__input" type="text" placeholder="Search ..." />
+					<button class="search__btn">
+						<img src="Assets/Images/Icon-Search.png" />
+					</button>
+				</div>
+			</div>
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header"></header>
+			<div class="header__icons">
+				<a href="WishList.html" class="header__icon__btn">
+					<img src="Assets/Images/Icon-Heart.svg" />
+					<span class="count">2</span>
+				</a>
+				<a href="Bags.html" class="header__icon__btn">
+					<img src="Assets/Images/Icon-Bag.svg" />
+					<span class="count">6</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+	<!-- =--------------------------------------= End Header Partition =------------------= -->
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
 
-      <!--=============== ACCOUNTS ===============-->
-      <section class="accounts"></section>
+	<!-- =--------------------------------------= Start Main Partition =------------------= -->
+	<main class="main">
 
-      <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter"></section>
-    </main>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+		<!-- =--------------------------------------= Start BreadCrumb Partition =------------------= -->
+		<section class="breadcrumb">
+			<ul class="breadcrumb__list wrapper display__flex">
+				<li>
+					<a href="index.html" class="breadcrumb__link">Home</a>
+				</li>
+				<li>
+					<span class="breadcrumb__link">&#45; &#62;</span>
+				</li>
+				<li>
+					<span class="breadcrumb__link">My Account</span>
+				</li>
+			</ul>
+		</section>
+		<!-- =--------------------------------------= End BreadCrumb Partition =------------------= -->
 
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src=""></script>
-  </body>
+		<!-- =--------------------------------------= Start Account Partition =------------------= -->
+		<section class="accounts partition__large">
+			<div class="accounts__wrapper wrapper display__grid">
+				<div class="accounts__tabs">
+					<p class="account__tab account__tab__active" data-target="#dashboard-tab">
+						<i class="fi fi-br-settings-sliders"></i> DashBoard
+					</p>
+					<p class="account__tab" data-target="#orders-tab">
+						<i class="fi fi-br-bags-shopping"></i> Orders
+					</p>
+					<p class="account__tab" data-target="#profile-tab">
+						<i class="fi fi-br-user"></i> Update Profile
+					</p>
+					<p class="account__tab" data-target="#address-tab">
+						<i class="fi fi-br-map-marker"></i> Address
+					</p>
+					<p class="account__tab" data-target="#change-password-tab">
+						<i class="fi fi-br-user"></i> Change Password
+					</p>
+					<p class="account__tab" data-target="#logout-tab">
+						<i class="fi fi-br-leave"></i> LogOut
+					</p>
+				</div>
+				<div class="accounts__contents">
+					<div class="tab__content tab__content__active" id="dashboard-tab" content>
+						<h3 class="tab__header">My DashBoard</h3>
+						<div class="tab__body">
+							<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Distinctio nihil minima, omnis dolorem maiores magnam aperiam culpa dolore necessitatibus, repellendus architecto amet dolorum quo laudantium vel qui vero sunt pariatur repellat rem labore, placeat incidunt.</p>
+						</div>
+					</div>
+					<div class="tab__content" id="orders-tab" content>
+						<h3 class="tab__header">My Orders</h3>
+						<div class="tab__body">
+							<table class="table__orders">
+								<tr>
+									<th>Order</th>
+									<th>Date</th>
+									<th>Status</th>
+									<th>Total</th>
+									<th>Actions</th>
+								</tr>
+								<tr>
+									<td>#45632</td>
+									<td>16th of April 1985</td>
+									<td class="order__status__completed">Completed</td>
+									<td>&dollar;1452.58</td>
+									<td>
+										<a href="#" class="view__order">View</a>
+									</td>
+								</tr>
+								<tr>
+									<td>#45855</td>
+									<td>21th of December 1995</td>
+									<td class="order__status__canceled">Canceled</td>
+									<td>&dollar;356.20</td>
+									<td>
+										<a href="#" class="view__order">View</a>
+									</td>
+								</tr>
+								<tr>
+									<td>#56985</td>
+									<td>01st January 2006</td>
+									<td class="order__status__completed">Completed</td>
+									<td>&dollar;192.58</td>
+									<td>
+										<a href="#" class="view__order">View</a>
+									</td>
+								</tr>
+								<tr>
+									<td>#65456</td>
+									<td>24th May 2011</td>
+									<td class="order__status__completed">Completed</td>
+									<td>&dollar;3652.95</td>
+									<td>
+										<a href="#" class="view__order">View</a>
+									</td>
+								</tr>
+								<tr>
+									<td>#78956</td>
+									<td>03rd July 2021</td>
+									<td class="order__status__processing">Processing</td>
+									<td>&dollar;8895.10</td>
+									<td>
+										<a href="#" class="view__order">View</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="tab__content" id="profile-tab" content>
+						<h3 class="tab__header">Update Profile</h3>
+						<div class="tab__body">
+							<form action="#" class="form display__grid">
+								<input type="text" class="form__input" placeholder="UserName ..." />
+								<div class="form__btn">
+									<button class="btn btn__medium" >Update UserName</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab__content" id="address-tab" content>
+						<h3 class="tab__header">My Addresses</h3>
+						<address class="address">
+							Issac Fahey, 9 Kelly Rapid,<br /> 
+							Robertsonport, Port Louis,<br /> 
+							United Kingdom, YO7 1SP
+						</address>
+						<p class="city">New York</p>
+						<a href="#" class="edit">Edit</a>
+					</div>
+					<div class="tab__content" id="change-tab" content>
+						<h3 class="tab__header">Change Password</h3>
+						<div class="tab__body">
+							<form action="#" class="form display__grid">
+								<input type="password" class="form__input" placeholder="Current Password ..." />
+								<input type="password" class="form__input" placeholder="New Password ..." />
+								<input type="password" class="form__input" placeholder="Confirm Password ..." />
+								<div class="form__btn">
+									<button class="btn btn__medium" >Update Password</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =--------------------------------------= End Account Partition =------------------= -->
+
+
+		<!-- =--------------------------------------= Start NewsLetter Partition =------------------= -->
+		<section class="newsletter partition">
+			<div class="newsletter__wrapper wrapper display__grid">
+				<h3 class="newsletter__title display__flex">
+					<img src="Assets/Images/Icon-EMail.svg" class="newsletter__icon" />
+					Sign Up To Our NewsLetter
+				</h3>
+				<p class="newsletter__description">Lorem ipsum, dolor sit amet consectetur.</p>
+				<form action="" class="newsletter__form">
+					<input type="text" class="newsletter__input" placeholder="Enter Your EMail..." />
+					<button type="submit" class="newsletter__btn">Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<!-- =--------------------------------------= End NewsLetter Partition =------------------= -->
+
+
+	</main>
+	<!-- =--------------------------------------= End Main Partition =------------------= -->
+
+
+	<!-- =--------------------------------------= Start Footer Partition =------------------= -->
+	<footer class="footer wrapper">
+		<div class="footer__wrapper display__grid">
+			<div class="footer__content">
+				<a href="index.html" class="footer__logo">
+					<img src="Assets/Images/Logo.svg" class="footer__image" />
+				</a>
+				<h4 class="footer__sub__title">Contact</h4>
+				<p class="footer__description">
+					<span>Address:</span>
+					Lorem ipsum dolor, sit amet consectetur adipisicing.
+				</p>
+				<p class="footer__description">
+					<span>Phone:</span>
+					+20 114 159 169 5.
+				</p>
+				<p class="footer__description">
+					<span>Hours:</span>
+					02:00 - 14:30, Sat - Thu
+				</p>
+				<div class="footer__social">
+					<h4 class="footer__sub__title">Follow Me</h4>
+					<div class="footer__social__links">
+						<a href="#">
+							<img src="Assets/Images/Icon-Facebook.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Twitter.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Instagram.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-Pinterest.svg" class="footer__social__icon" />
+						</a>
+						<a href="#">
+							<img src="Assets/Images/Icon-YouTube.svg" class="footer__social__icon" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__content">
+				<h4 class="footer__title">Address</h4>
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer__link">About Us</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Delivery Inforamtion</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Terms & Conditions</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Contact Us</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Support Center</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				<h4 class="footer__title">My Account</h4>
+				<ul class="footer__links">
+					<li>
+						<a href="" class="footer__link">Sign In</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">View Shopping Bag</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">My WhishList</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Track My Order</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">Help</a>
+					</li>
+					<li>
+						<a href="" class="footer__link">My Orders</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				<h3 class="footer__title">Payment GateWays</h3>
+				<img src="Assets/Images/Payments-Cards.png" class="payment__image" />
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<p class="copyright">&copy; 2024 AMW All Rights Reserved</p>
+			<span class="creator">Created By Ahmad Muhammad Waddah</span>
+		</div>
+	</footer>
+	<!-- =--------------------------------------= End Footer Partition =------------------= -->
+
+
+	<!-- =--------------------------------------= JavaScripts Scripts =------------------= -->
+	<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script defer type="text/javascript" src="Assets/Scripts/Scripts.js"></script>
+
+
+</body>
 </html>
