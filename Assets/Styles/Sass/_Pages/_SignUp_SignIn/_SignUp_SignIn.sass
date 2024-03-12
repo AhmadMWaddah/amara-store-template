@@ -3,6 +3,10 @@
 	.signup__signin__wrapper
 		grid-template-columns: repeat(2, 1fr)
 		align-items: flex-start
+		margin: auto
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			grid-template-columns: 1fr
 		/* =--------------------------------------= Sign Up Partition Styles =------------------= */
 		@import "_Snippets/_Sign_Up_Snippet.sass"
 

@@ -2,6 +2,10 @@
 .details
 	.details__wrapper
 		grid-template-columns: 5.5fr 6.5fr
+		margin: auto
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			grid-template-columns: 1fr
 		.details__group
 			.details__image
 				margin-bottom: 0.5rem

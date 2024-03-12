@@ -3,9 +3,13 @@
 .accounts
 	.accounts__wrapper
 		grid-template-columns: 4fr 8fr
+		margin: auto
 		/* =--------= max-width: 1400px =----= */
 		@media screen and (max-width: 1400px)
 			grid-template-columns: 3fr 9fr
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			grid-template-columns: 1fr
 
 		/* =--------------------------------------= Accounts Partition Styles =------------------= */
 		@import "_Snippets/_Accounts_Tabs_Snippet.sass"

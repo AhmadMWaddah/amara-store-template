@@ -1,62 +1,66 @@
 /* =--------------------------------------= Bag Table Partition Styles =------------------= */
-.bags
-	.bag__actions
-		display: flex
-		justify-content: flex-end
-		gap: 0.75rem
-		margin-top: 1.5rem
-	.divider
+.bag__actions
+	display: flex
+	justify-content: flex-end
+	gap: 0.75rem
+	margin-top: 1.5rem
+.divider
+	position: relative
+	text-align: center
+	margin-block: 3rem
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 0
+		width: 100%
+		border-top: 2px solid $borderColorAlt
+	i
+		color: $textColorLight
+		background: $bodyColor
+		font-size: 1.25rem
+		padding-inline: 1.25rem
 		position: relative
-		text-align: center
-		margin-block: 3rem
-		&:before
-			content: ""
-			position: absolute
-			top: 50%
-			left: 0
-			width: 100%
-			border-top: 2px solid $borderColorAlt
-		i
-			color: $textColorLight
-			background: $bodyColor
-			font-size: 1.25rem
-			padding-inline: 1.25rem
-			position: relative
-			z-index: 10
-	.bag__group
-		grid-template-columns: repeat(2, 1fr)
-		align-items: flex-start
-		div
-			.group__shipping
-				.partition__title
-					font-size: $largeFontSize
-					margin-bottom: 1rem
-			.group__discount
-				margin-top: 3rem
-				.partition__title
-					font-size: $largeFontSize
-					margin-bottom: 1rem
-				.discount__form
-					.form__group
-						align-items: center
-		.group__total
-			border: 1px solid $borderColorAlt
-			border-radius: 0.25rem
-			padding: 4rem 2rem
+		z-index: 10
+.bag__group
+	grid-template-columns: repeat(2, 1fr)
+	align-items: flex-start
+	/* =--------= max-width: 992px =----= */
+	@media screen and (max-width: 992px)
+		grid-template-columns: 1fr
+		row-gap: 2.75rem
+	div
+		.group__shipping
 			.partition__title
 				font-size: $largeFontSize
 				margin-bottom: 1rem
-			.bags__total__table
+		.group__discount
+			margin-top: 3rem
+			.partition__title
+				font-size: $largeFontSize
 				margin-bottom: 1rem
-				tr
-					td
-						border: 1px solid $borderColorAlt
-						padding: 0.75rem 0.5rem
-						width: 50%
-						.bags__total__title
-							font-size: $smallFontSize
-						.bags__total__price
-							color: $firstColor
-							font-weight: 700
-			.btn
-				display: inline-flex
+			.discount__form
+				.form__group
+					align-items: center
+	.group__total
+		border: 1px solid $borderColorAlt
+		border-radius: 0.25rem
+		padding: 4rem 2rem
+		.partition__title
+			font-size: $largeFontSize
+			margin-bottom: 1rem
+		.bags__total__table
+			margin-bottom: 1rem
+			tr
+				td
+					border: 1px solid $borderColorAlt
+					padding: 0.75rem 0.5rem
+					width: 50%
+					.bags__total__title
+						font-size: $smallFontSize
+					.bags__total__price
+						color: $firstColor
+						font-weight: 700
+		.btn
+			display: inline-flex
+			height: 100%

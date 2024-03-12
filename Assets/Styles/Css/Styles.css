@@ -207,9 +207,14 @@ table {
   background: #088179;
   padding-inline: 1.75rem;
   height: 49px;
-  line-height: 49px;
+  line-height: 45px;
   border-radius: 0.25rem;
-  transition: all 0.38s linear; }
+  transition: all 0.38s linear;
+  /* =--------= max-width: 992px =----= */ }
+  @media screen and (max-width: 992px) {
+    .btn {
+      height: 45px;
+      line-height: 45px; } }
   .btn:hover {
     background: transparent;
     color: #088179;
@@ -218,11 +223,21 @@ table {
   .btn__medium {
     font-family: "Lato", sans-serif;
     height: 45px;
-    line-height: 40px; }
+    line-height: 36px;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .btn__medium {
+        height: 42px;
+        line-height: 34px; } }
   .btn__small {
     font-family: "Lato", sans-serif;
     height: 40px;
-    line-height: 36px; }
+    line-height: 30px;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .btn__small {
+        height: 38px;
+        line-height: 30px; } }
 
 /* =--------= Custom Swiper Buttons =----= */
 .swiper__buttons, .swiper-button-next, .swiper-button-prev {
@@ -272,32 +287,80 @@ table {
         padding: 0.5rem;
         text-align: center; }
         .table__wrapper .table tr th:nth-child(1), .bags .table tr th:nth-child(1), .wishlist .table tr th:nth-child(1) {
-          width: 216px; }
+          width: 216px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr th:nth-child(1), .bags .table tr th:nth-child(1), .wishlist .table tr th:nth-child(1) {
+              width: 140px; } }
         .table__wrapper .table tr th:nth-child(2), .bags .table tr th:nth-child(2), .wishlist .table tr th:nth-child(2) {
-          width: 400px; }
+          width: 400px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr th:nth-child(2), .bags .table tr th:nth-child(2), .wishlist .table tr th:nth-child(2) {
+              width: 330px; } }
         .table__wrapper .table tr th:nth-child(3), .bags .table tr th:nth-child(3), .wishlist .table tr th:nth-child(3) {
-          width: 108px; }
+          width: 108px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr th:nth-child(3), .bags .table tr th:nth-child(3), .wishlist .table tr th:nth-child(3) {
+              width: 80px; } }
         .table__wrapper .table tr th:nth-child(4), .bags .table tr th:nth-child(4), .wishlist .table tr th:nth-child(4) {
-          width: 220px; }
+          width: 220px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr th:nth-child(4), .bags .table tr th:nth-child(4), .wishlist .table tr th:nth-child(4) {
+              width: 160px; } }
         .table__wrapper .table tr th:nth-child(5), .bags .table tr th:nth-child(5), .wishlist .table tr th:nth-child(5) {
-          width: 200px; }
+          width: 200px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr th:nth-child(5), .bags .table tr th:nth-child(5), .wishlist .table tr th:nth-child(5) {
+              width: 160px; } }
         .table__wrapper .table tr th:nth-child(6), .bags .table tr th:nth-child(6), .wishlist .table tr th:nth-child(6) {
-          width: 152px; }
+          width: 152px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr th:nth-child(6), .bags .table tr th:nth-child(6), .wishlist .table tr th:nth-child(6) {
+              width: 100px; } }
       .table__wrapper .table tr td, .bags .table tr td, .wishlist .table tr td {
         padding: 0.5rem;
         text-align: center; }
         .table__wrapper .table tr td:nth-child(1), .bags .table tr td:nth-child(1), .wishlist .table tr td:nth-child(1) {
-          width: 216px; }
+          width: 216px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr td:nth-child(1), .bags .table tr td:nth-child(1), .wishlist .table tr td:nth-child(1) {
+              width: 140px; } }
         .table__wrapper .table tr td:nth-child(2), .bags .table tr td:nth-child(2), .wishlist .table tr td:nth-child(2) {
-          width: 400px; }
+          width: 400px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr td:nth-child(2), .bags .table tr td:nth-child(2), .wishlist .table tr td:nth-child(2) {
+              width: 330px; } }
         .table__wrapper .table tr td:nth-child(3), .bags .table tr td:nth-child(3), .wishlist .table tr td:nth-child(3) {
-          width: 108px; }
+          width: 108px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr td:nth-child(3), .bags .table tr td:nth-child(3), .wishlist .table tr td:nth-child(3) {
+              width: 80px; } }
         .table__wrapper .table tr td:nth-child(4), .bags .table tr td:nth-child(4), .wishlist .table tr td:nth-child(4) {
-          width: 220px; }
+          width: 220px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr td:nth-child(4), .bags .table tr td:nth-child(4), .wishlist .table tr td:nth-child(4) {
+              width: 160px; } }
         .table__wrapper .table tr td:nth-child(5), .bags .table tr td:nth-child(5), .wishlist .table tr td:nth-child(5) {
-          width: 200px; }
+          width: 200px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr td:nth-child(5), .bags .table tr td:nth-child(5), .wishlist .table tr td:nth-child(5) {
+              width: 160px; } }
         .table__wrapper .table tr td:nth-child(6), .bags .table tr td:nth-child(6), .wishlist .table tr td:nth-child(6) {
-          width: 152px; }
+          width: 152px;
+          /* =--------= max-width: 992px =----= */ }
+          @media screen and (max-width: 992px) {
+            .table__wrapper .table tr td:nth-child(6), .bags .table tr td:nth-child(6), .wishlist .table tr td:nth-child(6) {
+              width: 100px; } }
         .table__wrapper .table tr td .table__image, .bags .table tr td .table__image, .wishlist .table tr td .table__image {
           width: 80px; }
         .table__wrapper .table tr td .table__title, .bags .table tr td .table__title, .wishlist .table tr td .table__title {
@@ -309,6 +372,8 @@ table {
           margin-inline: auto; }
         .table__wrapper .table tr td .table__price, .bags .table tr td .table__price, .wishlist .table tr td .table__price {
           font-size: 0.875rem; }
+        .table__wrapper .table tr td .table__quantity, .bags .table tr td .table__quantity, .wishlist .table tr td .table__quantity {
+          text-align: center; }
         .table__wrapper .table tr td .table__sub__total, .bags .table tr td .table__sub__total, .wishlist .table tr td .table__sub__total {
           font-size: 0.875rem; }
         .table__wrapper .table tr td .table__availability, .bags .table tr td .table__availability, .wishlist .table tr td .table__availability {
@@ -552,7 +617,11 @@ table {
     font-size: 1.125rem;
     margin-block: 0.5rem 2rem; }
   .banner .banner__wrapper .banner__image {
-    justify-self: flex-end; }
+    justify-self: flex-end;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .banner .banner__wrapper .banner__image {
+        justify-self: center; } }
 
 /* =--------------------------------------= Categories Partition Styles =------------------= */
 /* =--------------------------------------= Categories Partition Styles =------------------= */
@@ -600,7 +669,11 @@ table {
 /* =--------------------------------------= Deals Partition Styles =------------------= */
 .deals .deals__wrapper {
   grid-template-columns: repeat(2, 1fr);
-  margin: auto; }
+  margin: auto;
+  /* =--------= max-width: 992px =----= */ }
+  @media screen and (max-width: 992px) {
+    .deals .deals__wrapper {
+      grid-template-columns: 1fr; } }
   .deals .deals__wrapper .deals__item {
     padding: 3rem;
     background-size: cover;
@@ -623,7 +696,7 @@ table {
           column-gap: 1rem; } }
       .deals .deals__wrapper .deals__item .deals__group .count__down__amount {
         position: relative; }
-        .deals .deals__wrapper .deals__item .deals__group .count__down__amount:after {
+        .deals .deals__wrapper .deals__item .deals__group .count__down__amount:not(:last-child):after {
           content: ":";
           color: #212121;
           font-size: 1.125rem;
@@ -632,7 +705,7 @@ table {
           top: 20%;
           /* =--------= max-width: 1200px =----= */ }
           @media screen and (max-width: 1200px) {
-            .deals .deals__wrapper .deals__item .deals__group .count__down__amount:after {
+            .deals .deals__wrapper .deals__item .deals__group .count__down__amount:not(:last-child):after {
               right: -28%;
               top: 10%; } }
         .deals .deals__wrapper .deals__item .deals__group .count__down__amount .period {
@@ -825,7 +898,11 @@ table {
     grid-template-columns: repeat(2, 3.5fr) 5fr;
     align-items: center;
     column-gap: 3rem;
-    margin: auto; }
+    margin: auto;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .newsletter .newsletter__wrapper {
+        grid-template-columns: 1fr; } }
     .newsletter .newsletter__wrapper .newsletter__title {
       column-gap: 1rem;
       font-size: 1.125rem; }
@@ -836,7 +913,11 @@ table {
       font-family: "Spartan", sans-serif;
       font-size: 0.875rem;
       font-weight: 600;
-      text-align: center; }
+      text-align: center;
+      /* =--------= max-width: 992px =----= */ }
+      @media screen and (max-width: 992px) {
+        .newsletter .newsletter__wrapper .newsletter__description {
+          display: none; } }
     .newsletter .newsletter__wrapper .newsletter__form {
       display: flex; }
       .newsletter .newsletter__wrapper .newsletter__form .newsletter__input {
@@ -866,7 +947,11 @@ table {
   margin: auto; }
   .footer .footer__wrapper {
     grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
-    padding-block: 2.5rem; }
+    padding-block: 2.5rem;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .footer .footer__wrapper {
+        grid-template-columns: repeat(2, 2fr); } }
     .footer .footer__wrapper .footer__content .footer__sub__title {
       color: #90908e;
       font-size: 0.875rem;
@@ -955,7 +1040,12 @@ table {
 /* =--------------------------------------= Details Product Partition Styles =------------------= */
 /* =--------------------------------------= Details Product Partition Styles =------------------= */
 .details .details__wrapper {
-  grid-template-columns: 5.5fr 6.5fr; }
+  grid-template-columns: 5.5fr 6.5fr;
+  margin: auto;
+  /* =--------= max-width: 992px =----= */ }
+  @media screen and (max-width: 992px) {
+    .details .details__wrapper {
+      grid-template-columns: 1fr; } }
   .details .details__wrapper .details__group .details__image {
     margin-bottom: 0.5rem; }
   .details .details__wrapper .details__group .details__thmbnails {
@@ -1135,66 +1225,73 @@ table {
 /* =--------------------------------------= Related Products Partition Styles =------------------= */
 /* =--------------------------------------= Bags Page Styles =------------------= */
 /* =--------= Bags Page Styles =----= */
-/* =--------------------------------------= Bags Table Partition Styles =------------------= */
-/* =--------------------------------------= Bag Table Partition Styles =------------------= */
-/* =--------------------------------------= Bags Table Partition Styles =------------------= */
-/* =--------------------------------------= Bag Table Partition Styles =------------------= */
-.bags .bag__actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.75rem;
-  margin-top: 1.5rem; }
-.bags .divider {
-  position: relative;
-  text-align: center;
-  margin-block: 3rem; }
-  .bags .divider:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    border-top: 2px solid #e3e9e2; }
-  .bags .divider i {
-    color: #90908e;
-    background: white;
-    font-size: 1.25rem;
-    padding-inline: 1.25rem;
+.bags {
+  margin: auto;
+  /* =--------------------------------------= Bag Table Partition Styles =------------------= */
+  /* =--------------------------------------= Bags Table Partition Styles =------------------= */
+  /* =--------------------------------------= Bag Table Partition Styles =------------------= */ }
+  .bags .bag__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-top: 1.5rem; }
+  .bags .divider {
     position: relative;
-    z-index: 10; }
-.bags .bag__group {
-  grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start; }
-  .bags .bag__group div .group__shipping .partition__title {
-    font-size: 1.125rem;
-    margin-bottom: 1rem; }
-  .bags .bag__group div .group__discount {
-    margin-top: 3rem; }
-    .bags .bag__group div .group__discount .partition__title {
+    text-align: center;
+    margin-block: 3rem; }
+    .bags .divider:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      border-top: 2px solid #e3e9e2; }
+    .bags .divider i {
+      color: #90908e;
+      background: white;
+      font-size: 1.25rem;
+      padding-inline: 1.25rem;
+      position: relative;
+      z-index: 10; }
+  .bags .bag__group {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .bags .bag__group {
+        grid-template-columns: 1fr;
+        row-gap: 2.75rem; } }
+    .bags .bag__group div .group__shipping .partition__title {
       font-size: 1.125rem;
       margin-bottom: 1rem; }
-    .bags .bag__group div .group__discount .discount__form .form__group {
-      align-items: center; }
-  .bags .bag__group .group__total {
-    border: 1px solid #e3e9e2;
-    border-radius: 0.25rem;
-    padding: 4rem 2rem; }
-    .bags .bag__group .group__total .partition__title {
-      font-size: 1.125rem;
-      margin-bottom: 1rem; }
-    .bags .bag__group .group__total .bags__total__table {
-      margin-bottom: 1rem; }
-      .bags .bag__group .group__total .bags__total__table tr td {
-        border: 1px solid #e3e9e2;
-        padding: 0.75rem 0.5rem;
-        width: 50%; }
-        .bags .bag__group .group__total .bags__total__table tr td .bags__total__title {
-          font-size: 0.875rem; }
-        .bags .bag__group .group__total .bags__total__table tr td .bags__total__price {
-          color: #088179;
-          font-weight: 700; }
-    .bags .bag__group .group__total .btn {
-      display: inline-flex; }
+    .bags .bag__group div .group__discount {
+      margin-top: 3rem; }
+      .bags .bag__group div .group__discount .partition__title {
+        font-size: 1.125rem;
+        margin-bottom: 1rem; }
+      .bags .bag__group div .group__discount .discount__form .form__group {
+        align-items: center; }
+    .bags .bag__group .group__total {
+      border: 1px solid #e3e9e2;
+      border-radius: 0.25rem;
+      padding: 4rem 2rem; }
+      .bags .bag__group .group__total .partition__title {
+        font-size: 1.125rem;
+        margin-bottom: 1rem; }
+      .bags .bag__group .group__total .bags__total__table {
+        margin-bottom: 1rem; }
+        .bags .bag__group .group__total .bags__total__table tr td {
+          border: 1px solid #e3e9e2;
+          padding: 0.75rem 0.5rem;
+          width: 50%; }
+          .bags .bag__group .group__total .bags__total__table tr td .bags__total__title {
+            font-size: 0.875rem; }
+          .bags .bag__group .group__total .bags__total__table tr td .bags__total__price {
+            color: #088179;
+            font-weight: 700; }
+      .bags .bag__group .group__total .btn {
+        display: inline-flex;
+        height: 100%; }
 
 /* =--------------------------------------= WishLists Page Styles =------------------= */
 /* =--------= WishLists Page Styles =----= */
@@ -1205,25 +1302,43 @@ table {
 .signup__signin .signup__signin__wrapper {
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
+  margin: auto;
+  /* =--------= max-width: 992px =----= */
   /* =--------------------------------------= Sign Up Partition Styles =------------------= */
   /* =--------------------------------------= Sign Up Partition Styles =------------------= */
   /* =--------------------------------------= Sign In Partition Styles =------------------= */
   /* =--------------------------------------= Sign In Partition Styles =------------------= */ }
+  @media screen and (max-width: 992px) {
+    .signup__signin .signup__signin__wrapper {
+      grid-template-columns: 1fr; } }
   .signup__signin .signup__signin__wrapper .sign__Up {
     border: 1px solid #e3e9e2;
     padding: 2rem;
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .signup__signin .signup__signin__wrapper .sign__Up {
+        padding: 1.25rem; } }
   .signup__signin .signup__signin__wrapper .sign__in {
     border: 1px solid #e3e9e2;
     padding: 2rem;
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .signup__signin .signup__signin__wrapper .sign__in {
+        padding: 1.25rem; } }
 
 /* =--------------------------------------= CheckOuts Page Styles =------------------= */
 /* =--------= CheckOuts Page =----= */
 /* =--------------------------------------= CheckOuts Partition Styles =------------------= */
 .checkout .checkout__wrapper {
   grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  /* =--------= max-width: 992px =----= */
   /* =--------------------------------------= CheckOut Partition Styles =------------------= */ }
+  @media screen and (max-width: 992px) {
+    .checkout .checkout__wrapper {
+      grid-template-columns: 1fr; } }
   .checkout .checkout__wrapper .checkout__group:nth-child(2) {
     border: 1px solid #e3e9e2;
     padding: 2rem;
@@ -1321,7 +1436,9 @@ table {
 /* =--------------------------------------= Accounts Partition Styles =------------------= */
 .accounts .accounts__wrapper {
   grid-template-columns: 4fr 8fr;
+  margin: auto;
   /* =--------= max-width: 1400px =----= */
+  /* =--------= max-width: 992px =----= */
   /* =--------------------------------------= Accounts Partition Styles =------------------= */
   /* =--------------------------------------= Account Partition Styles =------------------= */
   /* =--------------------------------------= Accounts Partition Styles =------------------= */
@@ -1329,6 +1446,9 @@ table {
   @media screen and (max-width: 1400px) {
     .accounts .accounts__wrapper {
       grid-template-columns: 3fr 9fr; } }
+  @media screen and (max-width: 992px) {
+    .accounts .accounts__wrapper {
+      grid-template-columns: 1fr; } }
   .accounts .accounts__wrapper .accounts__tabs {
     border: 1px solid #e3e9e2;
     border-radius: 0.25rem; }

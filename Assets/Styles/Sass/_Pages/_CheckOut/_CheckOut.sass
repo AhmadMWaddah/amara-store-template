@@ -3,4 +3,8 @@
 .checkout
 	.checkout__wrapper
 		grid-template-columns: repeat(2, 1fr)
+		margin: auto
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			grid-template-columns: 1fr
 		@import "_Snippets/_CheckOut_Snippet.sass"

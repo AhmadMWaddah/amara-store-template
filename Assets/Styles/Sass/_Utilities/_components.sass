@@ -156,9 +156,13 @@
 	background: $firstColor
 	padding-inline: 1.75rem
 	height: 49px
-	line-height: 49px
+	line-height: 45px
 	border-radius: 0.25rem
 	transition: $transition
+	/* =--------= max-width: 992px =----= */
+	@media screen and (max-width: 992px)
+		height: 45px
+		line-height: 45px
 	&:hover
 		background: transparent
 		color: $firstColor
@@ -167,11 +171,19 @@
 	&__medium
 		font-family: $bodyFont
 		height: 45px
-		line-height: 40px
+		line-height: 36px
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			height: 42px
+			line-height: 34px
 	&__small
 		font-family: $bodyFont
 		height: 40px
-		line-height: 36px
+		line-height: 30px
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			height: 38px
+			line-height: 30px
 
 /* =--------= Custom Swiper Buttons =----= */
 .swiper__buttons
@@ -222,31 +234,67 @@
 				text-align: center
 				&:nth-child(1)
 					width: 216px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 140px
 				&:nth-child(2)
 					width: 400px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 330px
 				&:nth-child(3)
 					width: 108px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 80px
 				&:nth-child(4)
 					width: 220px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 160px
 				&:nth-child(5)
 					width: 200px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 160px
 				&:nth-child(6)
 					width: 152px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 100px
 			td
 				padding: 0.5rem
 				text-align: center
 				&:nth-child(1)
 					width: 216px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 140px
 				&:nth-child(2)
 					width: 400px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 330px
 				&:nth-child(3)
 					width: 108px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 80px
 				&:nth-child(4)
 					width: 220px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 160px
 				&:nth-child(5)
 					width: 200px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 160px
 				&:nth-child(6)
 					width: 152px
+					/* =--------= max-width: 992px =----= */
+					@media screen and (max-width: 992px)
+						width: 100px
 				.table__image
 					width: 80px
 				.table__title
@@ -258,6 +306,8 @@
 					margin-inline: auto
 				.table__price
 					font-size: $smallFontSize
+				.table__quantity
+					text-align: center
 				.table__sub__total
 					font-size: $smallFontSize
 				.table__availability
