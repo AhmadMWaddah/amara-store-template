@@ -1,9 +1,10 @@
 /* =--------------------------------------= ShowCase Partition Styles =------------------= */
 .showcase
 	.showcase__wrapper
+		grid-template-columns: repeat(4, 1fr)
+		margin: auto
 		@media screen and (max-width: 1400px)
 			grid-template-columns: repeat(3, 1fr)
-		grid-template-columns: repeat(4, 1fr)
 		.showcase__column
 			.partition__title
 				font-size: $normalFontSize
