@@ -223,7 +223,7 @@ table {
   .btn__medium {
     font-family: "Lato", sans-serif;
     height: 45px;
-    line-height: 36px;
+    line-height: 42px;
     /* =--------= max-width: 992px =----= */ }
     @media screen and (max-width: 992px) {
       .btn__medium {
@@ -238,6 +238,11 @@ table {
       .btn__small {
         height: 38px;
         line-height: 30px; } }
+  .btn__logout {
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: 1rem auto; }
 
 /* =--------= Custom Swiper Buttons =----= */
 .swiper__buttons, .swiper-button-next, .swiper-button-prev {
@@ -461,8 +466,6 @@ table {
       color: #90908e; }
     .header .header__top .header__wrapper .header__top__action {
       color: #475c53; }
-    .header .header__top .header__wrapper .header__contacts span:first-child {
-      margin-right: 2rem; }
 .header .navbar {
   height: calc(4rem + 2.5rem);
   justify-content: space-between;
@@ -1489,7 +1492,7 @@ table {
       padding: 1rem;
       font-size: 0.875rem; }
     .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body {
-      padding: 1rem; }
+      padding: 2rem; }
       .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body .table__orders tr th {
         color: #212121;
         text-align: left;

@@ -74,6 +74,23 @@ window.addEventListener("load", () => {
 		});
 	};
 	detailsImageGallery();
+
+
+	/* =--------------------------------------= Accounts Page Tabs =------------------= */
+	const accountsTabsButtons = document.querySelectorAll(".account__tab");
+	const accountsTabsContents = document.querySelectorAll(".tab__content");
+	accountsTabsButtons.forEach((accountTabButton, accountTabContent) => {
+		accountTabButton.addEventListener("click", () => {
+			accountsTabsButtons.forEach((tabElement) => {
+				tabElement.classList.remove("account__tab__active");
+			});
+			accountsTabsContents.forEach((contentElement) => {
+				contentElement.classList.remove("tab__content__active");
+			});
+			accountTabButton.classList.add("account__tab__active");
+			accountsTabsContents[accountTabContent].classList.add("tab__content__active");
+		});
+	});
 	
 
 });
