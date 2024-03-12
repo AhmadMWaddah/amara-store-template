@@ -3,6 +3,9 @@
 	.banner__wrapper
 		grid-template-columns: 5fr 7fr
 		align-items: center
+		/* =--------= min-width: 1201px - max-width: 1400px =----= */
+		@media screen and (max-width: 1200px)
+			grid-template-columns: 5.5fr 6.5fr
 		.banner__content
 			.banner__sub__title
 				font-family: $secondFont

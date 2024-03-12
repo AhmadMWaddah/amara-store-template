@@ -51,6 +51,9 @@
 /* =--------= Products Wrapper =----= */
 .products__wrapper
 	grid-template-columns: repeat(4, 1fr)
+	/* =--------= min-width: 1201px - max-width: 1400px =----= */
+	@media (max-width: 1400px)
+		grid-template-columns: repeat(3, 1fr)
 	.product__item
 		border: 0.15rem solid $borderColor
 		border-radius: 1.5rem
@@ -184,11 +187,22 @@
 .swiper-button-next
 	@extend .swiper__buttons
 	right: 0
+	/* =--------= min-width: 1201px - max-width: 1400px =----= */
+	@media screen and (max-width: 1200px)
+		top: -28px
+		width: 26px
+		height: 26px
 
 .swiper-button-prev
 	@extend .swiper__buttons
 	left: initial
 	right: 2.5rem
+	/* =--------= min-width: 1201px - max-width: 1400px =----= */
+	@media screen and (max-width: 1200px)
+		top: -28px
+		width: 26px
+		height: 26px
+		right: 36px
 
 /* =--------= Table =----= */
 .table__wrapper

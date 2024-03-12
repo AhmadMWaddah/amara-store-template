@@ -19,6 +19,9 @@
 				.count__down
 					display: flex
 					column-gap: 1.5rem
+					/* =--------= min-width: 1201px - max-width: 1400px =----= */
+					@media screen and (max-width: 1200px)
+						column-gap: 1rem
 					&__amount
 						position: relative
 						&:after
@@ -28,6 +31,10 @@
 							position: absolute
 							right: -25%
 							top: 20%
+							/* =--------= min-width: 1201px - max-width: 1400px =----= */
+							@media screen and (max-width: 1200px)
+								right: -28%
+								top: 10%
 						.period
 							background: $firstColor
 							color: $bodyColor
@@ -39,6 +46,11 @@
 							font-size: $largeFontSize
 							font-weight: 600
 							margin-bottom: 0.5rem
+							/* =--------= min-width: 1201px - max-width: 1400px =----= */
+							@media screen and (max-width: 1200px)
+								width: 36px
+								height: 36px
+								line-height: 36px								
 						.unit
 							display: block
 							font-size: $smallFontSize
