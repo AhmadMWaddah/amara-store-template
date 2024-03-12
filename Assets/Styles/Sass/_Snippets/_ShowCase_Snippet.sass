@@ -3,8 +3,12 @@
 	.showcase__wrapper
 		grid-template-columns: repeat(4, 1fr)
 		margin: auto
+		/* =--------= max-width: 1400px =----= */
 		@media screen and (max-width: 1400px)
 			grid-template-columns: repeat(3, 1fr)
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			grid-template-columns: repeat(2, 1fr)
 		.showcase__column
 			.partition__title
 				font-size: $normalFontSize
