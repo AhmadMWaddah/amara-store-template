@@ -4,6 +4,10 @@
 		display: flex
 		column-gap: 1.75rem
 		margin-bottom: 3rem
+		/* =--------= max-width: 576px =----= */
+		@media screen and (max-width: 576px)
+			column-gap: 1.25rem
+			margin-bottom: 2.5rem
 		.detail__tab__tab
 			font-family: $secondFont
 			font-size: $largeFontSize
@@ -23,10 +27,16 @@
 						padding: 0.625rem 1.25rem
 						font-weight: 500
 						text-align-last: left
+						/* =--------= max-width: 576px =----= */
+						@media screen and (max-width: 576px)
+							display: block
 					td
 						border: 1px solid $borderColorAlt
 						padding: 0.625rem 1.25rem
 						color: $textColorLight
+						/* =--------= max-width: 576px =----= */
+						@media screen and (max-width: 576px)
+							display: block
 			.reviews__wrapper
 				margin-bottom: 3rem
 				row-gap: 1.25rem
@@ -36,6 +46,9 @@
 					display: flex
 					align-items: flex-start
 					column-gap: 1.5rem
+					/* =--------= max-width: 576px =----= */
+					@media screen and (max-width: 576px)
+						column-gap: 1rem
 					&:last-child
 						padding-bottom: 3rem
 					.review__image

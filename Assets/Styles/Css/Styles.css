@@ -62,11 +62,23 @@ table {
   border: 0.15rem solid #cbe7cf;
   color: #475c53;
   font-size: 0.875rem;
+  /* =--------= max-width: 350px =----= */
   line-height: 42px;
   text-align: center;
   border-radius: 50%;
   position: relative;
-  transition: all 0.38s linear; }
+  transition: all 0.38s linear;
+  /* =--------= max-width: 350px =----= */ }
+  @media screen and (max-width: 350px) {
+    .action__button, .products__wrapper .product__item .product__banner .product__actions a, .products .tab__items .tab__item .product__item .product__banner .product__actions a, .products__wrapper .product__item .product__content .bag__button, .products .tab__items .tab__item .product__item .product__content .bag__button, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button {
+      font-size: 0.6875rem;
+      width: 35px;
+      height: 35px; } }
+  @media screen and (max-width: 350px) {
+    .action__button, .products__wrapper .product__item .product__banner .product__actions a, .products .tab__items .tab__item .product__item .product__banner .product__actions a, .products__wrapper .product__item .product__content .bag__button, .products .tab__items .tab__item .product__item .product__content .bag__button, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button {
+      width: 36px;
+      height: 36px;
+      line-height: 38px; } }
   .action__button:hover, .products__wrapper .product__item .product__banner .product__actions a:hover, .products .tab__items .tab__item .product__item .product__banner .product__actions a:hover, .products__wrapper .product__item .product__content .bag__button:hover, .products .tab__items .tab__item .product__item .product__content .bag__button:hover, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__banner .new__arrival__actions a:hover, .new__arrivals .new__arrivals__wrapper .swiper__wrapper .new__arrival__item .new__arrival__content .bag__button:hover {
     background: #088179;
     color: white;
@@ -103,17 +115,111 @@ table {
     transition: all 0.38s linear;
     opacity: 0; }
 
+/* =--------= Buttons =----= */
+.btn {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: inline-block;
+  color: white;
+  border: 0.2rem solid #088179;
+  background: #088179;
+  padding-inline: 1.75rem;
+  height: 49px;
+  line-height: 45px;
+  border-radius: 0.25rem;
+  transition: all 0.38s linear;
+  /* =--------= max-width: 992px =----= */ }
+  @media screen and (max-width: 992px) {
+    .btn {
+      height: 45px;
+      line-height: 45px; } }
+  .btn:hover {
+    background: transparent;
+    color: #088179;
+    transform: scale(1.01);
+    box-shadow: 0.05rem 0.05rem 1rem 0.01rem #088179; }
+  .btn__medium {
+    font-family: "Lato", sans-serif;
+    height: 45px;
+    line-height: 42px;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .btn__medium {
+        height: 42px;
+        line-height: 34px; } }
+  .btn__small {
+    font-family: "Lato", sans-serif;
+    height: 40px;
+    line-height: 30px;
+    /* =--------= max-width: 992px =----= */ }
+    @media screen and (max-width: 992px) {
+      .btn__small {
+        height: 38px;
+        line-height: 30px; } }
+  .btn__logout {
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: 1rem auto; }
+
+/* =--------= Custom Swiper Buttons =----= */
+.swiper__buttons, .swiper-button-next, .swiper-button-prev {
+  top: -1.875rem;
+  background: #e9f6eb;
+  border: 0.1rem solid #cbe7cf;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #088179;
+  font-size: 0.6875rem; }
+  .swiper__buttons:after, .swiper-button-next:after, .swiper-button-prev:after {
+    content: ""; }
+
+/* =--------= Basic Swiper Buttons =----= */
+.swiper-button-next {
+  right: 0;
+  /* =--------= max-width: 1200px =----= */
+  /* =--------= max-width: 350px =----= */ }
+  @media screen and (max-width: 1200px) {
+    .swiper-button-next {
+      top: -28px;
+      width: 26px;
+      height: 26px; } }
+  @media screen and (max-width: 350px) {
+    .swiper-button-next {
+      display: none; } }
+
+.swiper-button-prev {
+  left: initial;
+  right: 2.5rem;
+  /* =--------= max-width: 1200px =----= */
+  /* =--------= max-width: 350px =----= */ }
+  @media screen and (max-width: 1200px) {
+    .swiper-button-prev {
+      top: -28px;
+      width: 26px;
+      height: 26px;
+      right: 36px; } }
+  @media screen and (max-width: 350px) {
+    .swiper-button-prev {
+      display: none; } }
+
 /* =--------= Products Wrapper =----= */
 .products__wrapper, .products .tab__items .tab__item {
   grid-template-columns: repeat(4, 1fr);
   /* =--------= max-width: 1400px =----= */
-  /* =--------= max-width: 992px =----= */ }
+  /* =--------= max-width: 992px =----= */
+  /* =--------= max-width: 768px =----= */ }
   @media (max-width: 1400px) {
     .products__wrapper, .products .tab__items .tab__item {
       grid-template-columns: repeat(3, 1fr); } }
   @media screen and (max-width: 992px) {
     .products__wrapper, .products .tab__items .tab__item {
       grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 768px) {
+    .products__wrapper, .products .tab__items .tab__item {
+      grid-template-columns: 100%; } }
   .products__wrapper .product__item, .products .tab__items .tab__item .product__item {
     border: 0.15rem solid #cbe7cf;
     border-radius: 1.5rem;
@@ -193,90 +299,13 @@ table {
         text-decoration: line-through; }
       .products__wrapper .product__item .product__content .bag__button, .products .tab__items .tab__item .product__item .product__content .bag__button {
         position: absolute;
-        bottom: 1.6rem;
-        right: 1.25rem; }
-
-/* =--------= Buttons =----= */
-.btn {
-  font-family: "Spartan", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 700;
-  display: inline-block;
-  color: white;
-  border: 0.2rem solid #088179;
-  background: #088179;
-  padding-inline: 1.75rem;
-  height: 49px;
-  line-height: 45px;
-  border-radius: 0.25rem;
-  transition: all 0.38s linear;
-  /* =--------= max-width: 992px =----= */ }
-  @media screen and (max-width: 992px) {
-    .btn {
-      height: 45px;
-      line-height: 45px; } }
-  .btn:hover {
-    background: transparent;
-    color: #088179;
-    transform: scale(1.01);
-    box-shadow: 0.05rem 0.05rem 1rem 0.01rem #088179; }
-  .btn__medium {
-    font-family: "Lato", sans-serif;
-    height: 45px;
-    line-height: 42px;
-    /* =--------= max-width: 992px =----= */ }
-    @media screen and (max-width: 992px) {
-      .btn__medium {
-        height: 42px;
-        line-height: 34px; } }
-  .btn__small {
-    font-family: "Lato", sans-serif;
-    height: 40px;
-    line-height: 30px;
-    /* =--------= max-width: 992px =----= */ }
-    @media screen and (max-width: 992px) {
-      .btn__small {
-        height: 38px;
-        line-height: 30px; } }
-  .btn__logout {
-    display: block;
-    text-align: center;
-    width: 40%;
-    margin: 1rem auto; }
-
-/* =--------= Custom Swiper Buttons =----= */
-.swiper__buttons, .swiper-button-next, .swiper-button-prev {
-  top: -1.875rem;
-  background: #e9f6eb;
-  border: 0.1rem solid #cbe7cf;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  color: #088179;
-  font-size: 0.6875rem; }
-  .swiper__buttons:after, .swiper-button-next:after, .swiper-button-prev:after {
-    content: ""; }
-
-/* =--------= Basic Swiper Buttons =----= */
-.swiper-button-next {
-  right: 0;
-  /* =--------= max-width: 1200px =----= */ }
-  @media screen and (max-width: 1200px) {
-    .swiper-button-next {
-      top: -28px;
-      width: 26px;
-      height: 26px; } }
-
-.swiper-button-prev {
-  left: initial;
-  right: 2.5rem;
-  /* =--------= max-width: 1200px =----= */ }
-  @media screen and (max-width: 1200px) {
-    .swiper-button-prev {
-      top: -28px;
-      width: 26px;
-      height: 26px;
-      right: 36px; } }
+        bottom: 3rem;
+        right: 1rem;
+        /* =--------= max-width: 350px =----= */ }
+        @media screen and (max-width: 350px) {
+          .products__wrapper .product__item .product__content .bag__button, .products .tab__items .tab__item .product__item .product__content .bag__button {
+            bottom: 1.4rem;
+            right: 1.25rem; } }
 
 /* =--------= Table =----= */
 .table__wrapper, .bags, .wishlist {
@@ -398,7 +427,8 @@ table {
   padding-inline: 0.75rem;
   /* =--------= max-width: 1400px =----= */
   /* =--------= max-width: 1200px =----= */
-  /* =--------= max-width: 992px =----= */ }
+  /* =--------= max-width: 992px =----= */
+  /* =--------= max-width: 768px =----= */ }
   @media (max-width: 1400px) {
     .wrapper {
       max-width: 1180px;
@@ -410,6 +440,9 @@ table {
   @media screen and (max-width: 992px) {
     .wrapper {
       max-width: 740px; } }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      max-width: 540px; } }
 
 .form {
   row-gap: 1rem; }
@@ -637,10 +670,16 @@ table {
       text-align: center;
       border: 0.15rem solid #cbe7cf;
       padding: 0.625rem 0.625rem 1.25rem;
-      border-radius: 1.25rem; }
+      border-radius: 1.25rem;
+      /* =--------= max-width: 576px =----= */ }
+      @media screen and (max-width: 576px) {
+        .categories .categories__wrapper .swiper__wrapper .category__item {
+          padding-bottom: 1rem; } }
       .categories .categories__wrapper .swiper__wrapper .category__item .category__image {
         border-radius: 0.75rem;
-        margin-bottom: 1.25rem; }
+        margin-bottom: 1.25rem;
+        /* =--------= max-width: 576px =----= */
+        margin-bottom: 1rem; }
       .categories .categories__wrapper .swiper__wrapper .category__item .category__title {
         color: #475c53;
         font-size: 0.875rem; }
@@ -651,7 +690,8 @@ table {
   margin: auto; }
   .products .tab__buttons {
     display: flex;
-    column-gap: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     margin-bottom: 2.5rem; }
     .products .tab__buttons .tab__button {
       background: #ededed;
@@ -683,7 +723,11 @@ table {
     background-position: center;
     display: flex;
     flex-direction: column;
-    row-gap: 1.5rem; }
+    row-gap: 1.5rem;
+    /* =--------= max-width: 576px =----= */ }
+    @media screen and (max-width: 576px) {
+      .deals .deals__wrapper .deals__item {
+        padding: 1.25rem; } }
     .deals .deals__wrapper .deals__item:nth-child(1) {
       background: url("../../Images/Deals-01.jpg"); }
     .deals .deals__wrapper .deals__item:nth-child(2) {
@@ -853,13 +897,17 @@ table {
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
   /* =--------= max-width: 1400px =----= */
-  /* =--------= max-width: 992px =----= */ }
+  /* =--------= max-width: 992px =----= */
+  /* =--------= max-width: 768px =----= */ }
   @media screen and (max-width: 1400px) {
     .showcase .showcase__wrapper {
       grid-template-columns: repeat(3, 1fr); } }
   @media screen and (max-width: 992px) {
     .showcase .showcase__wrapper {
       grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 768px) {
+    .showcase .showcase__wrapper {
+      grid-template-columns: 100%; } }
   .showcase .showcase__wrapper .showcase__column .partition__title {
     font-size: 1rem;
     border-bottom: 0.15rem solid #e3e9e2;
@@ -877,13 +925,25 @@ table {
   .showcase .showcase__wrapper .showcase__column .showcase__item {
     display: flex;
     align-items: center;
-    column-gap: 1.5rem; }
+    column-gap: 1.5rem;
+    /* =--------= max-width: 350px =----= */ }
+    @media screen and (max-width: 350px) {
+      .showcase .showcase__wrapper .showcase__column .showcase__item {
+        column-gap: 1rem; } }
     .showcase .showcase__wrapper .showcase__column .showcase__item:not(:last-child) {
       margin-bottom: 1.5rem; }
     .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__image__box .showcase__image {
-      width: 86px; }
+      width: 86px;
+      /* =--------= max-width: 350px =----= */ }
+      @media screen and (max-width: 350px) {
+        .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__image__box .showcase__image {
+          width: 70px; } }
     .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__content {
-      width: calc(100% - 110px); }
+      width: calc(100% - 110px);
+      /* =--------= max-width: 350px =----= */ }
+      @media screen and (max-width: 350px) {
+        .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__content {
+          width: calc(100% - 86px); } }
       .showcase .showcase__wrapper .showcase__column .showcase__item .showcase__content .showcase__title {
         font-size: 0.875rem;
         font-weight: 500;
@@ -951,10 +1011,14 @@ table {
   .footer .footer__wrapper {
     grid-template-columns: 4.5fr repeat(2, 2fr) 3.5fr;
     padding-block: 2.5rem;
-    /* =--------= max-width: 992px =----= */ }
+    /* =--------= max-width: 992px =----= */
+    /* =--------= max-width: 768px =----= */ }
     @media screen and (max-width: 992px) {
       .footer .footer__wrapper {
         grid-template-columns: repeat(2, 2fr); } }
+    @media screen and (max-width: 768px) {
+      .footer .footer__wrapper {
+        grid-template-columns: 100%; } }
     .footer .footer__wrapper .footer__content .footer__sub__title {
       color: #90908e;
       font-size: 0.875rem;
@@ -972,7 +1036,11 @@ table {
         overflow: 0.7; }
     .footer .footer__wrapper .footer__content .footer__title {
       font-size: 1.125rem;
-      margin-block: 1rem 1.25rem; }
+      margin-block: 1rem 1.25rem;
+      /* =--------= max-width: 576px =----= */ }
+      @media screen and (max-width: 576px) {
+        .footer .footer__wrapper .footer__content .footer__title {
+          margin-top: 0.25rem; } }
     .footer .footer__wrapper .footer__content .footer__links .footer__link {
       color: #212121;
       font-size: 0.875rem;
@@ -988,7 +1056,12 @@ table {
     display: flex;
     justify-content: space-between;
     padding-block: 1.25rem;
-    border-top: 0.15rem solid #e3e9e2; }
+    border-top: 0.15rem solid #e3e9e2;
+    /* =--------= max-width: 576px =----= */ }
+    @media screen and (max-width: 576px) {
+      .footer .footer__bottom {
+        flex-direction: column;
+        align-items: center; } }
     .footer .footer__bottom .copyright {
       color: #90908e;
       font-size: 0.875rem; }
@@ -1019,7 +1092,12 @@ table {
 .products .pagination {
   display: flex;
   column-gap: 0.625rem;
-  margin-top: 2.75rem; }
+  margin-top: 2.75rem;
+  /* =--------= max-width: 576px =----= */ }
+  @media screen and (max-width: 576px) {
+    .products .pagination {
+      column-gap: 0.5rem;
+      margin-top: 2.5rem; } }
   .products .pagination .pagination__link {
     display: inline-block;
     width: 34px;
@@ -1030,7 +1108,13 @@ table {
     color: #475c53;
     font-size: 0.875rem;
     font-weight: 700;
-    transition: all 0.38s linear; }
+    transition: all 0.38s linear;
+    /* =--------= max-width: 576px =----= */ }
+    @media screen and (max-width: 576px) {
+      .products .pagination .pagination__link {
+        width: 30px;
+        height: 30px;
+        line-height: 30px; } }
     .products .pagination .pagination__link:hover {
       background: #088179;
       color: white; }
@@ -1045,10 +1129,14 @@ table {
 .details .details__wrapper {
   grid-template-columns: 5.5fr 6.5fr;
   margin: auto;
-  /* =--------= max-width: 992px =----= */ }
+  /* =--------= max-width: 992px =----= */
+  /* =--------= max-width: 768px =----= */ }
   @media screen and (max-width: 992px) {
     .details .details__wrapper {
       grid-template-columns: 1fr; } }
+  @media screen and (max-width: 768px) {
+    .details .details__wrapper {
+      grid-template-columns: 100%; } }
   .details .details__wrapper .details__group .details__image {
     margin-bottom: 0.5rem; }
   .details .details__wrapper .details__group .details__thmbnails {
@@ -1172,7 +1260,12 @@ table {
 .details__tabs .details__tabs__tabs {
   display: flex;
   column-gap: 1.75rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  /* =--------= max-width: 576px =----= */ }
+  @media screen and (max-width: 576px) {
+    .details__tabs .details__tabs__tabs {
+      column-gap: 1.25rem;
+      margin-bottom: 2.5rem; } }
   .details__tabs .details__tabs__tabs .detail__tab__tab {
     font-family: "Spartan", sans-serif;
     font-size: 1.125rem;
@@ -1186,11 +1279,19 @@ table {
   border: 1px solid #e3e9e2;
   padding: 0.625rem 1.25rem;
   font-weight: 500;
-  text-align-last: left; }
+  text-align-last: left;
+  /* =--------= max-width: 576px =----= */ }
+  @media screen and (max-width: 576px) {
+    .details__tabs .details__tabs__content .detail__tab__content .info__tab__table tr th {
+      display: block; } }
 .details__tabs .details__tabs__content .detail__tab__content .info__tab__table tr td {
   border: 1px solid #e3e9e2;
   padding: 0.625rem 1.25rem;
-  color: #90908e; }
+  color: #90908e;
+  /* =--------= max-width: 576px =----= */ }
+  @media screen and (max-width: 576px) {
+    .details__tabs .details__tabs__content .detail__tab__content .info__tab__table tr td {
+      display: block; } }
 .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper {
   margin-bottom: 3rem;
   row-gap: 1.25rem; }
@@ -1199,7 +1300,11 @@ table {
     padding-bottom: 1.2rem;
     display: flex;
     align-items: flex-start;
-    column-gap: 1.5rem; }
+    column-gap: 1.5rem;
+    /* =--------= max-width: 576px =----= */ }
+    @media screen and (max-width: 576px) {
+      .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review {
+        column-gap: 1rem; } }
     .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review:last-child {
       padding-bottom: 3rem; }
     .details__tabs .details__tabs__content .detail__tab__content .reviews__wrapper .review .review__image {
@@ -1236,6 +1341,7 @@ table {
   .bags .bag__actions {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 0.75rem;
     margin-top: 1.5rem; }
   .bags .divider {
@@ -1267,13 +1373,22 @@ table {
     .bags .bag__group div .group__shipping .partition__title {
       font-size: 1.125rem;
       margin-bottom: 1rem; }
+    .bags .bag__group div .group__shipping .form__group {
+      /* =--------= max-width: 576px =----= */ }
+      @media screen and (max-width: 576px) {
+        .bags .bag__group div .group__shipping .form__group {
+          grid-template-columns: 1fr; } }
     .bags .bag__group div .group__discount {
       margin-top: 3rem; }
       .bags .bag__group div .group__discount .partition__title {
         font-size: 1.125rem;
         margin-bottom: 1rem; }
       .bags .bag__group div .group__discount .discount__form .form__group {
-        align-items: center; }
+        align-items: center;
+        /* =--------= max-width: 576px =----= */ }
+        @media screen and (max-width: 576px) {
+          .bags .bag__group div .group__discount .discount__form .form__group {
+            grid-template-columns: 1fr; } }
     .bags .bag__group .group__total {
       border: 1px solid #e3e9e2;
       border-radius: 0.25rem;
@@ -1282,11 +1397,20 @@ table {
         font-size: 1.125rem;
         margin-bottom: 1rem; }
       .bags .bag__group .group__total .bags__total__table {
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        /* =--------= max-width: 576px =----= */ }
+        @media screen and (max-width: 576px) {
+          .bags .bag__group .group__total .bags__total__table {
+            padding: 1.25rem; } }
         .bags .bag__group .group__total .bags__total__table tr td {
           border: 1px solid #e3e9e2;
           padding: 0.75rem 0.5rem;
-          width: 50%; }
+          width: 50%;
+          /* =--------= max-width: 350px =----= */ }
+          @media screen and (max-width: 350px) {
+            .bags .bag__group .group__total .bags__total__table tr td {
+              display: block;
+              width: 100%; } }
           .bags .bag__group .group__total .bags__total__table tr td .bags__total__title {
             font-size: 0.875rem; }
           .bags .bag__group .group__total .bags__total__table tr td .bags__total__price {
@@ -1346,10 +1470,14 @@ table {
     border: 1px solid #e3e9e2;
     padding: 2rem;
     border-right: 0.5rem;
-    /* =--------= max-width: 1200px =----= */ }
+    /* =--------= max-width: 1200px =----= */
+    /* =--------= max-width: 576px =----= */ }
     @media screen and (max-width: 1200px) {
       .checkout .checkout__wrapper .checkout__group:nth-child(2) {
         padding: 1.5rem; } }
+    @media screen and (max-width: 576px) {
+      .checkout .checkout__wrapper .checkout__group:nth-child(2) {
+        padding: 1.25rem; } }
   .checkout .checkout__wrapper .checkout__group .partition__title {
     font-size: 1.125rem; }
   .checkout .checkout__wrapper .checkout__group .order__table tr th {
@@ -1357,11 +1485,19 @@ table {
     padding: 0.5rem;
     text-align: center;
     color: #212121;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    /* =--------= max-width: 576px =----= */ }
+    @media screen and (max-width: 576px) {
+      .checkout .checkout__wrapper .checkout__group .order__table tr th {
+        display: none; } }
   .checkout .checkout__wrapper .checkout__group .order__table tr td {
     border: 1px solid #e3e9e2;
     padding: 0.5rem;
-    text-align: center; }
+    text-align: center;
+    /* =--------= max-width: 576px =----= */ }
+    @media screen and (max-width: 576px) {
+      .checkout .checkout__wrapper .checkout__group .order__table tr td {
+        display: block; } }
     .checkout .checkout__wrapper .checkout__group .order__table tr td .table__title {
       font-size: 0.875rem;
       color: #088179; }
@@ -1378,7 +1514,11 @@ table {
   .checkout .checkout__wrapper .checkout__group .form .checkout__title {
     font-size: 0.875rem; }
   .checkout .checkout__wrapper .checkout__group .payment__methods {
-    margin-block: 2.5rem 2.75rem; }
+    margin-block: 2.5rem 2.75rem;
+    /* =--------= max-width: 576px =----= */ }
+    @media screen and (max-width: 576px) {
+      .checkout .checkout__wrapper .checkout__group .payment__methods {
+        margin-block: 2.25rem 2.5rem; } }
     .checkout .checkout__wrapper .checkout__group .payment__methods .payment__title {
       margin-bottom: 1.5rem; }
     .checkout .checkout__wrapper .checkout__group .payment__methods .payment__option {
@@ -1397,11 +1537,19 @@ table {
     padding: 0.5rem;
     border: 1px solid #e3e9e2;
     color: #90908e;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    /* =--------= max-width: 350px =----= */ }
+    @media screen and (max-width: 350px) {
+      .compare .compare__table tr th {
+        display: block; } }
   .compare .compare__table tr td {
     padding: 0.5rem;
     border: 1px solid #e3e9e2;
-    text-align: center; }
+    text-align: center;
+    /* =--------= max-width: 768px =----= */ }
+    @media screen and (max-width: 768px) {
+      .compare .compare__table tr td {
+        display: block; } }
     .compare .compare__table tr td .table__title {
       font-size: 0.875rem;
       color: #088179; }
@@ -1442,6 +1590,7 @@ table {
   margin: auto;
   /* =--------= max-width: 1400px =----= */
   /* =--------= max-width: 992px =----= */
+  /* =--------= max-width: 768px =----= */
   /* =--------------------------------------= Accounts Partition Styles =------------------= */
   /* =--------------------------------------= Account Partition Styles =------------------= */
   /* =--------------------------------------= Accounts Partition Styles =------------------= */
@@ -1452,6 +1601,9 @@ table {
   @media screen and (max-width: 992px) {
     .accounts .accounts__wrapper {
       grid-template-columns: 1fr; } }
+  @media screen and (max-width: 768px) {
+    .accounts .accounts__wrapper {
+      grid-template-columns: 100%; } }
   .accounts .accounts__wrapper .accounts__tabs {
     border: 1px solid #e3e9e2;
     border-radius: 0.25rem; }
@@ -1490,19 +1642,35 @@ table {
       background: #ededed;
       border-bottom: 1px solid #e3e9e2;
       padding: 1rem;
-      font-size: 0.875rem; }
+      font-size: 0.875rem;
+      /* =--------= max-width: 768px =----= */ }
+      @media screen and (max-width: 768px) {
+        .accounts .accounts__wrapper .accounts__contents .tab__content .tab__header {
+          padding: 0.75rem; } }
     .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body {
-      padding: 2rem; }
+      padding: 2rem;
+      /* =--------= max-width: 768px =----= */ }
+      @media screen and (max-width: 768px) {
+        .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body {
+          padding: 0.75rem; } }
       .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body .table__orders tr th {
         color: #212121;
         text-align: left;
         border: 1px solid #e3e9e2;
         padding: 0.5rem;
-        font-size: 0.875rem; }
+        font-size: 0.875rem;
+        /* =--------= max-width: 576px =----= */ }
+        @media screen and (max-width: 576px) {
+          .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body .table__orders tr th {
+            display: none; } }
       .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body .table__orders tr td {
         border: 1px solid #e3e9e2;
         padding: 0.5rem;
-        font-size: 0.875rem; }
+        font-size: 0.875rem;
+        /* =--------= max-width: 576px =----= */ }
+        @media screen and (max-width: 576px) {
+          .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body .table__orders tr td {
+            display: block; } }
         .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body .table__orders tr td .view__order {
           color: #088179; }
       .accounts .accounts__wrapper .accounts__contents .tab__content .tab__body .table__orders tr .order__status__completed {

@@ -7,6 +7,9 @@
 		/* =--------= max-width: 992px =----= */
 		@media screen and (max-width: 992px)
 			grid-template-columns: repeat(2, 2fr)
+		/* =--------= max-width: 768px =----= */
+		@media screen and (max-width: 768px)
+			grid-template-columns: 100%
 		.footer__content
 			.footer__sub__title
 				color: $textColorLight
@@ -26,7 +29,10 @@
 						overflow: 0.7
 			.footer__title
 				font-size: $largeFontSize
-				margin-block: 1rem 1.25rem	
+				margin-block: 1rem 1.25rem
+				/* =--------= max-width: 576px =----= */
+				@media screen and (max-width: 576px)
+					margin-top: 0.25rem
 			.footer__links
 				.footer__link
 					color: $titleColor
@@ -44,7 +50,11 @@
 		display: flex
 		justify-content: space-between
 		padding-block: 1.25rem
-		border-top: 0.15rem solid $borderColorAlt
+		border-top: 0.15rem solid $borderColorAlt		
+		/* =--------= max-width: 576px =----= */
+		@media screen and (max-width: 576px)
+			flex-direction: column
+			align-items: center
 		.copyright
 			color: $textColorLight
 			font-size: $smallFontSize

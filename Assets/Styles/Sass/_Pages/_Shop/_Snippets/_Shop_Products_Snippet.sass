@@ -9,6 +9,10 @@
 		display: flex
 		column-gap: 0.625rem
 		margin-top: 2.75rem
+		/* =--------= max-width: 576px =----= */
+		@media screen and (max-width: 576px)
+			column-gap: 0.5rem
+			margin-top: 2.5rem
 		.pagination__link
 			display: inline-block
 			width: 34px
@@ -20,6 +24,11 @@
 			font-size: $smallFontSize
 			font-weight: 700
 			transition: $transition
+			/* =--------= max-width: 576px =----= */
+			@media screen and (max-width: 576px)
+				width: 30px
+				height: 30px
+				line-height: 30px
 			&:hover
 				background: $firstColor
 				color: $bodyColor

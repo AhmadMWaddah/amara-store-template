@@ -2,6 +2,7 @@
 .bag__actions
 	display: flex
 	justify-content: flex-end
+	flex-wrap: wrap
 	gap: 0.75rem
 	margin-top: 1.5rem
 .divider
@@ -34,6 +35,10 @@
 			.partition__title
 				font-size: $largeFontSize
 				margin-bottom: 1rem
+			.form__group
+				/* =--------= max-width: 576px =----= */
+				@media screen and (max-width: 576px)
+					grid-template-columns: 1fr
 		.group__discount
 			margin-top: 3rem
 			.partition__title
@@ -42,6 +47,9 @@
 			.discount__form
 				.form__group
 					align-items: center
+					/* =--------= max-width: 576px =----= */
+					@media screen and (max-width: 576px)
+						grid-template-columns: 1fr
 	.group__total
 		border: 1px solid $borderColorAlt
 		border-radius: 0.25rem
@@ -51,11 +59,18 @@
 			margin-bottom: 1rem
 		.bags__total__table
 			margin-bottom: 1rem
+			/* =--------= max-width: 576px =----= */
+			@media screen and (max-width: 576px)
+				padding: 1.25rem
 			tr
 				td
 					border: 1px solid $borderColorAlt
 					padding: 0.75rem 0.5rem
 					width: 50%
+					/* =--------= max-width: 350px =----= */
+					@media screen and (max-width: 350px)
+						display: block
+						width: 100%
 					.bags__total__title
 						font-size: $smallFontSize
 					.bags__total__price

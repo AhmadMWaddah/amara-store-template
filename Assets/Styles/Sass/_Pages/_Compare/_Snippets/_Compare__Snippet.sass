@@ -5,10 +5,16 @@ tr
 		border: 1px solid $borderColorAlt
 		color: $textColorLight
 		font-size: $smallFontSize
+		/* =--------= max-width: 350px =----= */
+		@media screen and (max-width: 350px)
+			display: block
 	td
 		padding: 0.5rem
 		border: 1px solid $borderColorAlt
 		text-align: center
+		/* =--------= max-width: 768px =----= */
+		@media screen and (max-width: 768px)
+			display: block
 		.table__title
 			font-size: $smallFontSize
 			color: $firstColor

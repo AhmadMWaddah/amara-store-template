@@ -7,11 +7,21 @@
 	border: 0.15rem solid $borderColor
 	color: $textColor
 	font-size: $smallFontSize
+	/* =--------= max-width: 350px =----= */
+	@media screen and (max-width: 350px)
+		font-size: $tinyFontSize
+		width: 35px
+		height: 35px
 	line-height: 42px
 	text-align: center
 	border-radius: 50%
 	position: relative
 	transition: $transition
+	/* =--------= max-width: 350px =----= */
+	@media screen and (max-width: 350px)
+		width: 36px
+		height: 36px
+		line-height: 38px
 	&:hover
 		background: $firstColor
 		color: $bodyColor
@@ -48,6 +58,91 @@
 		transition: $transition
 		opacity: 0
 
+/* =--------= Buttons =----= */
+.btn
+	font-family: $secondFont
+	font-size: $smallFontSize
+	font-weight: 700
+	display: inline-block
+	color: $bodyColor
+	border: 0.2rem solid $firstColor
+	background: $firstColor
+	padding-inline: 1.75rem
+	height: 49px
+	line-height: 45px
+	border-radius: 0.25rem
+	transition: $transition
+	/* =--------= max-width: 992px =----= */
+	@media screen and (max-width: 992px)
+		height: 45px
+		line-height: 45px
+	&:hover
+		background: transparent
+		color: $firstColor
+		transform: scale(1.01)
+		box-shadow: $boxShadow
+	&__medium
+		font-family: $bodyFont
+		height: 45px
+		line-height: 42px
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			height: 42px
+			line-height: 34px
+	&__small
+		font-family: $bodyFont
+		height: 40px
+		line-height: 30px
+		/* =--------= max-width: 992px =----= */
+		@media screen and (max-width: 992px)
+			height: 38px
+			line-height: 30px
+	&__logout
+		display: block
+		text-align: center
+		width: 40%
+		margin: 1rem auto
+
+/* =--------= Custom Swiper Buttons =----= */
+.swiper__buttons
+	top: -1.875rem
+	background: $firstColorAlt
+	border: 0.1rem solid $borderColor
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	color: $firstColor
+	font-size: $tinyFontSize
+	&:after
+		content: ""	
+
+/* =--------= Basic Swiper Buttons =----= */
+.swiper-button-next
+	@extend .swiper__buttons
+	right: 0
+	/* =--------= max-width: 1200px =----= */
+	@media screen and (max-width: 1200px)
+		top: -28px
+		width: 26px
+		height: 26px	
+	/* =--------= max-width: 350px =----= */
+	@media screen and (max-width: 350px)
+		display: none
+
+.swiper-button-prev
+	@extend .swiper__buttons
+	left: initial
+	right: 2.5rem
+	/* =--------= max-width: 1200px =----= */
+	@media screen and (max-width: 1200px)
+		top: -28px
+		width: 26px
+		height: 26px
+		right: 36px	
+	/* =--------= max-width: 350px =----= */
+	@media screen and (max-width: 350px)
+		display: none
+
 /* =--------= Products Wrapper =----= */
 .products__wrapper
 	grid-template-columns: repeat(4, 1fr)
@@ -57,6 +152,9 @@
 	/* =--------= max-width: 992px =----= */
 	@media screen and (max-width: 992px)
 		grid-template-columns: repeat(2, 1fr)
+	/* =--------= max-width: 768px =----= */
+	@media screen and (max-width: 768px)
+		grid-template-columns: 100%		
 	.product__item
 		border: 0.15rem solid $borderColor
 		border-radius: 1.5rem
@@ -144,85 +242,10 @@
 				position: absolute
 				bottom: 3rem
 				right: 1rem
-
-/* =--------= Buttons =----= */
-.btn
-	font-family: $secondFont
-	font-size: $smallFontSize
-	font-weight: 700
-	display: inline-block
-	color: $bodyColor
-	border: 0.2rem solid $firstColor
-	background: $firstColor
-	padding-inline: 1.75rem
-	height: 49px
-	line-height: 45px
-	border-radius: 0.25rem
-	transition: $transition
-	/* =--------= max-width: 992px =----= */
-	@media screen and (max-width: 992px)
-		height: 45px
-		line-height: 45px
-	&:hover
-		background: transparent
-		color: $firstColor
-		transform: scale(1.01)
-		box-shadow: $boxShadow
-	&__medium
-		font-family: $bodyFont
-		height: 45px
-		line-height: 42px
-		/* =--------= max-width: 992px =----= */
-		@media screen and (max-width: 992px)
-			height: 42px
-			line-height: 34px
-	&__small
-		font-family: $bodyFont
-		height: 40px
-		line-height: 30px
-		/* =--------= max-width: 992px =----= */
-		@media screen and (max-width: 992px)
-			height: 38px
-			line-height: 30px
-	&__logout
-		display: block
-		text-align: center
-		width: 40%
-		margin: 1rem auto
-
-/* =--------= Custom Swiper Buttons =----= */
-.swiper__buttons
-	top: -1.875rem
-	background: $firstColorAlt
-	border: 0.1rem solid $borderColor
-	width: 30px
-	height: 30px
-	border-radius: 50%
-	color: $firstColor
-	font-size: $tinyFontSize
-	&:after
-		content: ""	
-
-/* =--------= Basic Swiper Buttons =----= */
-.swiper-button-next
-	@extend .swiper__buttons
-	right: 0
-	/* =--------= max-width: 1200px =----= */
-	@media screen and (max-width: 1200px)
-		top: -28px
-		width: 26px
-		height: 26px
-
-.swiper-button-prev
-	@extend .swiper__buttons
-	left: initial
-	right: 2.5rem
-	/* =--------= max-width: 1200px =----= */
-	@media screen and (max-width: 1200px)
-		top: -28px
-		width: 26px
-		height: 26px
-		right: 36px
+				/* =--------= max-width: 350px =----= */
+				@media screen and (max-width: 350px)
+					bottom: 1.4rem
+					right: 1.25rem
 
 /* =--------= Table =----= */
 .table__wrapper
