@@ -91,6 +91,23 @@ window.addEventListener("load", () => {
 			accountsTabsContents[accountTabContent].classList.add("tab__content__active");
 		});
 	});
+
+
+	/* =--------------------------------------= Details Page Tabs =------------------= */
+	const detailsTabsButtons = document.querySelectorAll(".detail__tab__tab");
+	const detailsTabsContents = document.querySelectorAll(".detail__tab__content");
+	detailsTabsButtons.forEach((detailTabButton, detailTabContent) => {
+		detailTabButton.addEventListener("click", () => {
+			detailsTabsButtons.forEach((tabElement) => {
+				tabElement.classList.remove("detail__tab__tab__active");
+			});
+			detailsTabsContents.forEach((contentElement) => {
+				contentElement.classList.remove("detail__tab__content__active");
+			});
+			detailTabButton.classList.add("detail__tab__tab__active");
+			detailsTabsContents[detailTabContent].classList.add("detail__tab__content__active");
+		});
+	});
 	
 
 });
