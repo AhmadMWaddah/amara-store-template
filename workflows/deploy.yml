@@ -1,5 +1,6 @@
 name: Deploy to EC2
 
+
 on:
   push:
     branches:
@@ -24,5 +25,5 @@ jobs:
 
     - name: Restart Web Server
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.UP_SKILL_CHALLENGE_USER }}@${{ secrets.UP_SKILL_CHALLENGE_EC2_HOST }} 'sudo systemctl restart apache2 || sudo systemctl restart nginx'  # Modify based on your web server
+        ssh -o StrictHostKeyChecking=no ${{ secrets.UP_SKILL_CHALLENGE_USER }}@${{ secrets.UP_SKILL_CHALLENGE_EC2_HOST }} 'sudo systemctl restart nginx'  # Modify based on your web server
 
