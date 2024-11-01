@@ -1,6 +1,5 @@
 name: Deploy to EC2
 
-
 on:
   push:
     branches:
@@ -21,9 +20,13 @@ jobs:
 
     - name: Copy files to EC2
       run: |
-        rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.UP_SKILL_CHALLENGE_USER }}@${{ secrets.UP_SKILL_CHALLENGE_EC2_HOST }}:/var/www/amara  # Update the path as needed on EC2
+        rsync -avz -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.UP_SKILL_CHALLENGE_USER }}@${{ secrets.UP_SKILL_CHALLENGE_EC2_HOST }}:/var/www/amara
+
+    - name: Set file permissions on EC2
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.UP_SKILL_CHALLENGE_USER }}@${{ secrets.UP_SKILL_CHALLENGE_EC2_HOST }} 'sudo chown -R www-data:www-data /var/www/amara && sudo chmod -R 755 /var/www/amara'
 
     - name: Restart Web Server
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.UP_SKILL_CHALLENGE_USER }}@${{ secrets.UP_SKILL_CHALLENGE_EC2_HOST }} 'sudo systemctl restart nginx'  # Modify based on your web server
+        ssh -o StrictHostKeyChecking=no ${{ secrets.UP_SKILL_CHALLENGE_USER }}@${{ secrets.UP_SKILL_CHALLENGE_EC2_HOST }} 'sudo nginx -t && sudo systemctl restart nginx'
 
